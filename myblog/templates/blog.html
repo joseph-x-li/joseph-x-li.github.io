@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
+<h1 class="text-4xl font-bold mb-8">
   {{ section.title }}
 </h1>
-<ul>
+<ul class="space-y-4">
   <!-- If you are using pagination, section.pages will be empty.
        You need to use the paginator object -->  
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <li>
+    <a 
+      href="{{ page.permalink | safe }}"
+      class="text-blue-600 dark:text-blue-400 hover:underline"
+    >
+      {{ page.title }}
+    </a>
+  </li>
   {% endfor %}
 </ul>
 {% endblock content %}
