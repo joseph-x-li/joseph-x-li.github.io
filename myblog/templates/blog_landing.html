@@ -1,18 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
+<button onclick="history.back()" class="back-button">← Back</button>
+
 <h1>
   {{ section.title }}
 </h1>
 <ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
   {% for page in section.pages %}
   <li>
     {{ page.date }}
-    <a href="{{ page.permalink | safe }}" >
-      {{ page.title }}
-    </a>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <ul>
+      {% if page.description %}
+      <li>{{ page.description }}</li>
+      {% endif %}
+      {% if page.extra.featured_image %}
+      <li>
+        <img src="{{ page.extra.featured_image }}" style="height: 200px; width: auto; display: block; margin-top: 10px;">
+      </li>
+      {% endif %}
+    </ul>
   </li>
   {% endfor %}
 </ul>
