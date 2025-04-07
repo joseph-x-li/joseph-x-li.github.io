@@ -4,7 +4,6 @@ date: 2025-04-06
 draft: false
 description: Lawrence Chen's Cats
 extra: {"featured_image" : "/cat_cafe/apollo_artemis/apollo_artemis_3.jpeg"}
-slug: "apollo_artemis"
 ---
 
 ## About
