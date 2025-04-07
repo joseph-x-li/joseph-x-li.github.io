@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<button onclick="window.location.href='../'" class="back-button">← back</button>
+<a href="../" class="back-button" style="font-size: 22pt;">← back</a>
 
-<h1 style="font-size: 44pt;">
-  {{ section.title }}
-</h1>
+<h1> {{ section.title }} </h1>
 
 {% if section.extra and section.extra.is_construction == "yes" %}
-<img src="/404.jpeg" style="margin: 50px; border: 2px solid black;">
+<img src="/404.jpeg" style="border: 2px solid black;">
 {% else %}
 <ul style="list-style: none; padding: 0;">
   {% for page in section.pages %}
