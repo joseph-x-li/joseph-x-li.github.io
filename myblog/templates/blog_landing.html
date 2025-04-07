@@ -6,7 +6,19 @@
 <h1> {{ section.title }} </h1>
 
 {% if section.extra and section.extra.is_construction == "yes" %}
-<img src="/404.jpeg" style="border: 2px solid black;">
+<style>
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-image {
+  animation: marquee 3s steps(600) infinite;
+  border: 2px solid black;
+}
+</style>
+<img src="/404.jpeg" class="marquee-image">
 {% else %}
 <ul style="list-style: none; padding: 0;">
   {% for page in section.pages %}
