@@ -10,7 +10,7 @@ These are the ones that I often find myself thinking about in the middle of the 
 
  - You are the average of your five closest friends.
  - Being on time is not a talent.
-   - When I was an intern at IBM, they put us all in a giant video call and gave out a bunch of advice. This is the only one that stuck.
+   - At the start of when I interned at IBM, they put us all in a giant video call and gave out a bunch of advice. This is the only one that stuck.
  - For every hour you dedicate to learning, dedicate two to application. Impose a limit on your research time.
  - 99% of people do not step out of their comfort zone.
  - An alarm is a promise you made to yourself. Do not break that promise.
