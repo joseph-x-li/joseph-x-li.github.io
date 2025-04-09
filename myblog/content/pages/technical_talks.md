@@ -1,5 +1,5 @@
 +++
-title = "Eye-opening Technical Content"
+title = "Good Technical Content"
 date = 2025-03-27
 +++
 
@@ -42,3 +42,4 @@ A lot of computer architecture videos are surface level. You listen to them but 
  - Asianometry: [Youtube Channel](https://www.youtube.com/asianometry)
    - Asianometry is well known for his semiconductor explainers, but look back at his first videos and you will see why his channel is called "Asianometry". The topics are diverse and the commentary is well-written with tasteful humor thrown in. I estimate he is 4 to 5 years older than I am but he makes cultural references like he is 15 years older.
    - I remember the first video I watched ([What Xi Jinping Says About Alleviating Poverty](https://www.youtube.com/watch?v=v_ULeti0K0c)). Upon finishing, I immediately binged a series of his videos and then decided to become a Patreon supporter (which I still am). I encourage you to do so too.
+     - That video makes reference to Xi's book "Up and Out of Poverty". I actually read the English translation (no audiobook 😠). Maybe I should write up my thoughts.

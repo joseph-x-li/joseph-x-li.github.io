@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<a href="../" class="back-button" style="font-size: 22pt;">← back</a>
+<a href="../" class="back-button" style="font-size: 1.25rem;">← back</a>
 <article>
   <h1>
-    {{ page.title }}
+    <div style="text-align: center;">{{ page.title }}</div>
   </h1>
-  <p>
-    <strong>{{ page.date }}</strong>
+  <p style="text-align: center;">
+    {{ page.date }}<br>
+    <small>{{ page.reading_time }}min</small>
   </p>
   {{ page.content | safe }}
 </article>
