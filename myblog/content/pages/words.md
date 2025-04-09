@@ -4,9 +4,9 @@ date = 2025-04-08
 +++
 
 
-They used to be written down on an index card inside my desk. Then, I moved them to a spreadsheet. Now, they are here.
+These used to be written down on an index card inside my desk. Then, I moved them to a spreadsheet. Now, they are here.
 
-These are the ones that I often find myself thinking about in the middle of the day.
+These are the specific ones that I often find myself thinking about in the middle of the day.
 
  - You are the average of your five closest friends.
  - Being on time is not a talent.
