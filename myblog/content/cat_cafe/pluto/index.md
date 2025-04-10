@@ -1,7 +1,6 @@
 ---
 title: Pluto
 date: 2021-12-27
-draft: false
 description: Lawrence Chen's Cat
 extra: {"featured_image" : "/cat_cafe/pluto/pluto_7.jpeg"}
 ---

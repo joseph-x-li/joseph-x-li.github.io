@@ -1,7 +1,6 @@
 ---
 title: "Doudou (豆豆)"
 date: 2022-01-01
-draft: false
 description: "Edward Li's Cat"
 extra: {"featured_image" : "/cat_cafe/doudou/doudou_2.jpeg"}
 ---

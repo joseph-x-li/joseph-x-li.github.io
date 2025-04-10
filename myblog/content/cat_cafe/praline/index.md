@@ -1,7 +1,6 @@
 ---
 title: Praline
 date: 2022-01-01
-draft: false
 description: David Buffkin's Cat
 extra: {"featured_image" : "/cat_cafe/praline/praline_1.jpeg"}
 ---

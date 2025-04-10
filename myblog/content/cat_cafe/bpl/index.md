@@ -1,7 +1,6 @@
 ---
 title: "Peanut, Butter, and Linda"
 date: 2022-07-08
-draft: false
 description: "Katie Yoon's Cats"
 extra: {"featured_image" : "/cat_cafe/bpl/bpl_1.jpeg"}
 ---

@@ -1,7 +1,6 @@
 ---
 title: Miaomi (喵咪)
 date: 2021-12-27
-draft: false
 description: Edward Li's Cat
 extra: {"featured_image" : "/cat_cafe/miaomi/miaomi_6.jpeg"}
 ---

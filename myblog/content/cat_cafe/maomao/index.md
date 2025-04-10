@@ -1,6 +1,5 @@
 ---
 title: Maomao (毛毛)
-draft: false
 date: 2022-07-03
 description: "My Cat #1"
 extra: { "featured_image" : "/cat_cafe/maomao/maomao_1.jpeg" }

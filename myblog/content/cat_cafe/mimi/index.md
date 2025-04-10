@@ -1,7 +1,6 @@
 ---
 title: "Mimi (미미)"
 date: 2021-12-26
-draft: false
 description: "Konwoo Kim's Cat"
 extra: {"featured_image" : "/cat_cafe/mimi/mimi_2.jpeg"}
 ---
