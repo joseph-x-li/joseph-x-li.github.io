@@ -8,7 +8,7 @@
   </h1>
   <p style="text-align: center;">
     {{ page.date }}<br>
-    <small>{{ page.reading_time }}{% if page.reading_time > 1 %}mins{% else %}min{% endif %}</small>
+    <small>{% if page.reading_time > 1 %} {{ page.reading_time }} mins {% else %} {{ page.reading_time }} min {% endif %}</small>
   </p>
   {{ page.content | safe }}
 </article>

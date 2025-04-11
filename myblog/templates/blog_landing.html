@@ -28,6 +28,9 @@
         <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
       </div>
       <div style="margin-top: 5px;">{{ page.date }}</div>
+      {% if page.reading_time %}
+      <div style="margin-top: 5px;">{% if page.reading_time > 1 %} {{ page.reading_time }} mins {% else %} {{ page.reading_time }} min {% endif %}</div>
+      {% endif %}
       {% if page.description %}
       <div style="margin-top: 10px;">{{ page.description }}</div>
       {% endif %}
