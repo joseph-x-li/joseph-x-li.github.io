@@ -36,4 +36,5 @@ Pluto recently got stuck in a really tall tree and was brought down by some fire
   <li class="item"><img src="/cat_cafe/pluto/pluto_2.jpeg"></li>
   <li class="item"><img src="/cat_cafe/pluto/pluto_3.jpeg"></li>
   <li class="item"><img src="/cat_cafe/pluto/pluto_5.jpeg"></li>
+  <li class="item"><img src="/cat_cafe/pluto/pluto_8.jpeg"></li>
 </ul>

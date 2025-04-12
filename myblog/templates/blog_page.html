@@ -10,6 +10,7 @@
     {{ page.date }}<br>
     <small>{% if page.reading_time > 1 %} {{ page.reading_time }} mins {% else %} {{ page.reading_time }} min {% endif %}</small>
   </p>
+  <hr>
   {{ page.content | safe }}
 </article>
 {% endblock content %}
