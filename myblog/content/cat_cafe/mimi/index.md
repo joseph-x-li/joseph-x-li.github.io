@@ -5,7 +5,7 @@ description: "Konwoo Kim's Cat"
 extra: {"featured_image" : "/cat_cafe/mimi/mimi_2.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Gainesville, Florida  
 **Owner:** Konwoo Kim and his family  
@@ -18,7 +18,7 @@ Mimi is a very very very cute Domestic Shorthair. I proposed to Mimi, but Konwoo
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/mimi/mimi_2.jpeg"></li>
   <li class="item"><img src="/cat_cafe/mimi/mimi_1.jpeg"></li>

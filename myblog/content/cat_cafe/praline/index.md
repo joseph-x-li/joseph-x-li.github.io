@@ -5,8 +5,7 @@ description: David Buffkin's Cat
 extra: {"featured_image" : "/cat_cafe/praline/praline_1.jpeg"}
 ---
 
-## About
-
+## about
 
 **Location:** Gainesville, Florida  
 **Owner:** David Buffkin and his family  
@@ -19,7 +18,7 @@ Praline has been caught playing poker. She is old and might pass soon. Please pr
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/praline/praline_1.jpeg"></li>
   <li class="item"><img src="/cat_cafe/praline/praline_2.jpeg"></li>

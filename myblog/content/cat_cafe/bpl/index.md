@@ -5,7 +5,7 @@ description: "Katie Yoon's Cats"
 extra: {"featured_image" : "/cat_cafe/bpl/bpl_1.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Seoul, Korea  
 **Owner:** Katie Yoon and her family  
@@ -22,7 +22,7 @@ All three are street cats that were taken in.
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/bpl/bpl_1.jpeg"></li>
   <li class="item"><img src="/cat_cafe/bpl/bpl_2.jpeg"></li>

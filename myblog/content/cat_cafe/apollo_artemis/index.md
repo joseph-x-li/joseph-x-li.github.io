@@ -5,7 +5,7 @@ description: Lawrence Chen's Cats
 extra: {"featured_image" : "/cat_cafe/apollo_artemis/apollo_artemis_4.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Sunnyvale, California  
 **Owner:** Lawrence Chen  
@@ -22,7 +22,7 @@ I bought them a Campbell soup can bed but they don't like it :(
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/apollo_artemis/apollo_artemis_1.jpeg"></li>
   <li class="item"><img src="/cat_cafe/apollo_artemis/apollo_artemis_2.jpeg"></li>

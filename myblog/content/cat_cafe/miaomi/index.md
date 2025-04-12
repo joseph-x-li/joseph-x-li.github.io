@@ -5,7 +5,7 @@ description: Edward Li's Cat
 extra: {"featured_image" : "/cat_cafe/miaomi/miaomi_6.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Ridgewood, New Jersey  
 **Owner:** Edward Li and his family  
@@ -18,7 +18,7 @@ Fun Fact: May or may not have contracted COVID-19.
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/miaomi/miaomi_1.jpeg"></li>
   <li class="item"><img src="/cat_cafe/miaomi/miaomi_2.jpeg"></li>

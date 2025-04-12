@@ -5,7 +5,7 @@ description: "My Cat #1"
 extra: { "featured_image" : "/cat_cafe/maomao/maomao_1.jpeg" }
 ---
 
-## About
+## about
 
 
 **Location:** Saratoga, CA  
@@ -21,7 +21,7 @@ Maomao is a very carefree cat. She will let you pick her up and play with her (I
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/maomao/maomao_1.jpeg"></li>

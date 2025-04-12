@@ -5,7 +5,7 @@ description: Lawrence Chen's Cat
 extra: {"featured_image" : "/cat_cafe/pluto/pluto_7.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Princeton, New Jersey  
 **Owner:** Lawrence Chen and his family  
@@ -26,7 +26,7 @@ Pluto recently got stuck in a really tall tree and was brought down by some fire
 
 
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/pluto/pluto_7.jpeg"></li>
   <li class="item aspect"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/3t_73hkWFaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>

@@ -5,8 +5,7 @@ description: "My Cat #2"
 extra: { "featured_image" : "/cat_cafe/taotao/taotao_1.jpeg" }
 ---
 
-## About
-
+## about
 
 **Location:** Saratoga, CA  
 **Owner:** Joseph Li and his family  
@@ -21,7 +20,7 @@ Taotao is Maomao's younger sister. She is very timid but loves to eat and often 
 <link rel="stylesheet" href="../collage.css">
 </head>
 
-## Gallery
+## gallery
 
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/taotao/taotao_1.jpeg"></li>

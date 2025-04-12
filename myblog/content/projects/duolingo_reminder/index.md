@@ -5,7 +5,7 @@ date: 2020-11-20
 extra: {"featured_image": "/projects/duolingo_reminder/duogun.jpg"}
 ---
 
-## About
+## about
 
 {{ github() }}[Github⇗](https://github.com/joseph-x-li/fb-duolingo)  
 
@@ -16,7 +16,7 @@ I originally made this because my friend Konwoo had trouble keeping his streak.
 <img src="/projects/duolingo_reminder/kimdead.png" width="700"/>
 
 
-## How it works
+## how it works
 
 The script is run daily using a cronjob. It calls Duolingo and Fbchat APIs to check streaks and send messages. Extendible to multiple users.
 

@@ -5,7 +5,7 @@ description: "Edward Li's Cat"
 extra: {"featured_image" : "/cat_cafe/doudou/doudou_2.jpeg"}
 ---
 
-## About
+## about
 
 **Location:** Ridgewood, New Jersey  
 **Owner:** Edward Li and his family  
@@ -18,7 +18,7 @@ Doudou (豆豆), which means bean in Chinese, is called this because when she wa
 <link rel="stylesheet" href="/cat_cafe/collage.css">
 </head>
 
-## Gallery
+## gallery
 <ul class="columns">
   <li class="item"><img src="/cat_cafe/doudou/doudou_1.jpeg"></li>
   <li class="item"><img src="/cat_cafe/doudou/doudou_3.jpeg"></li>
