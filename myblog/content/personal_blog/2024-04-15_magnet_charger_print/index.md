@@ -1,5 +1,6 @@
 +++
 title = "3d printed tray for wireless charger"
+extra = {"featured_image" = "/personal_blog/magnet_charger_print/finished.jpeg"}
 +++
 
 # the problem 
