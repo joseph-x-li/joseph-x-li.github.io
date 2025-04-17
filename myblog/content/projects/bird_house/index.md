@@ -1,5 +1,5 @@
 ---
-title: "MakeMIT 2020: IOT Bird House"
+title: "iot bird house @ makemit"
 description: "Bringing ornithological research into the 21st century."
 date: 2020-02-23
 extra: {"featured_image": "/projects/bird_house/splash.jpg"}

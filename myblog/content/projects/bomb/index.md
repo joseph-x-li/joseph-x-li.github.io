@@ -1,5 +1,5 @@
 ---
-title: "TartanHacks 2020: Ramen Bot"
+title: "ramen bot @ tartanhacks"
 description: "Automating a classic college experience. Won Spiciest Meme Award."
 date: 2020-03-13
 extra: {"featured_image": "/projects/bomb/ramensplash.jpg"}

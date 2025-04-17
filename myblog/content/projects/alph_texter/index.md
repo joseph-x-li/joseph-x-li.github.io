@@ -1,5 +1,5 @@
 ---
-title: Alphabet Texter
+title: "alphabet texter"
 description: Tkinter app to bring alphabet typing skills to the next level.
 date: 2020-12-30
 extra: {"featured_image": "/projects/alph_texter/splash.png"}

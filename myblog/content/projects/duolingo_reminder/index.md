@@ -1,5 +1,5 @@
 ---
-title: Duolingo Reminder System
+title: "duolingo reminder system"
 description: "Use Facebook Messenger to remind my friends to do their Duolingo Lessons."
 date: 2020-11-20
 extra: {"featured_image": "/projects/duolingo_reminder/duogun.jpg"}

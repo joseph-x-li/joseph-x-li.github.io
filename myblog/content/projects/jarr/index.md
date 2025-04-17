@@ -1,5 +1,5 @@
 ---
-title: "Hackberry Pi 2022: JARR (Just Another Rescue Robot)"
+title: "JARR (just another rescue robot) @ hackberry pi"
 description: "Search and rescue robot built on a Raspberry Pi. Won Best Hardware Hack"
 date: 2022-03-20
 extra: {"featured_image" : "/projects/jarr/full.jpeg"}

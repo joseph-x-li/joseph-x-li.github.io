@@ -1,5 +1,5 @@
 ---
-title: "HackMIT 2020: Rhythmic Live"
+title: "rhythmic live @ hackmit"
 description: Synchronous music rehersal and recording over the internet. Won NASDAQ Live Music challenge.
 date: 2020-09-20
 extra: {"featured_image" : "/projects/rhythmic_live/rhythmiclivesplash.png"}

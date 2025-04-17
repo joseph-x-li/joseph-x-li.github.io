@@ -1,5 +1,5 @@
 ---
-title: "HackCMU 2019: CMU Printer App"
+title: "cmu printer app @ hackcmu"
 description: "A simple app for locating CMU printers."
 date: 2019-12-30
 extra: {"featured_image": "/projects/cmu_printer/cmuprintersplash.png"}
