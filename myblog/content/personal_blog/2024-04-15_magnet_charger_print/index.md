@@ -10,7 +10,7 @@ I recently purchased an "Anker MagGo Wireless Charging Station (3-in-1 Pad)" to 
 <img src="pad.png" style="height: 350px; width: auto; border: 1px solid black;">
 
 It is difficult to align my airpods with the center charger.  
- - If the airpods do not align, then they will not charger (obviously).  
+ - If the airpods do not align, then they will not charge (obviously).  
  - More annoyingly, if the airpods are slightly misaligned, they will cycle from charging and not charging roughly every 10 seconds. 
  - It is not visually pleasing to have misaligned airpods.
 
