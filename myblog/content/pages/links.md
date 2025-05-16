@@ -19,6 +19,7 @@ date = 2025-05-14
  - [Play soccer while you still can](https://saratogafalcon.org/8784/columns/play-soccer-while-you-still-can/) - Victor Liu
  - [California's biggest flex](https://moxie.org/2023/11/13/what-california-exports.html) - Moxie Marlinspike
  - [Putting Ideas Into Words](https://paulgraham.com/words.html) - Paul Graham
+ - [Chance for Peace](https://en.wikipedia.org/wiki/Chance_for_Peace_speech) -  Dwight D. Eisenhower
 
 ### china
  - [Sixth Tone](https://www.sixthtone.com/)
@@ -34,6 +35,6 @@ date = 2025-05-14
 
 ### extremely funny shit
  - [SVG: The Good, the Bad and the Ugly](https://www.eisfunke.com/posts/2021/svg-the-good-the-bad-and-the-ugly.html) - Nicolas Lenz
- - [Fuck Everything, We're Doing Five Blades](https://theonion.com/fuck-everything-were-doing-five-blades-1819584036/) -- The Onion
- - [Just fucking use HTML](https://justfuckingusehtml.com/) -- Unknown
+ - [Fuck Everything, We're Doing Five Blades](https://theonion.com/fuck-everything-were-doing-five-blades-1819584036/) - The Onion
+ - [Just fucking use HTML](https://justfuckingusehtml.com/) - Unknown
    - Accurately describes this website
