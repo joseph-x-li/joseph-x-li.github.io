@@ -20,3 +20,4 @@ These cross my mind most often.
    That hotel, that park, that railway. The world is a museum of passion projects.  
    — John Collison, Co-founder of Stripe
  - It works IF you keep going.
+ - If someone watched you for a week, would they believe you’re serious about your goals?
