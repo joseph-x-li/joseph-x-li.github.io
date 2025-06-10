@@ -3,8 +3,8 @@ title = "books"
 date = 2025-06-01
 +++
 
-### The Price of Being Fair
- - 
+<!-- ### The Price of Being Fair
+ -  -->
 
 ### The Founders - Jimmy Soni
  - Chapter 0: There are "constellations of talent" and PayPal was one of them. Other modern examples include Bell Labs and Fairchild Semiconductor. 
