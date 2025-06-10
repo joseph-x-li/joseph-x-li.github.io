@@ -9,7 +9,7 @@ extra: {"featured_image": "/projects/bomb/ramensplash.jpg"}
 
 {{ github() }}[Github⇗](https://github.com/atomicapple0/ramen_bot)  
 {{ youtube() }}[Demo⇗](https://www.youtube.com/watch?v=7We7kzvptaM)  
-{{ devpost() }}[Devpost⇗](https://devpost.com/software/its-the-bomb)
+{{ devpost() }}[Devpost⇗](https://devpost.com/software/its-the-bomb)  
 Teammates: Brian Zhang, Brian Lee
 
 Have you ever eaten food? Well this machine is the perfect device for YOU! Our project elevates instant ramen to a new plane of excellence. Perfect for the typical college student in functionality and aesthetic.

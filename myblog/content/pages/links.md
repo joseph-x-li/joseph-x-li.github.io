@@ -20,6 +20,7 @@ date = 2025-05-14
  - [California's biggest flex](https://moxie.org/2023/11/13/what-california-exports.html) - Moxie Marlinspike
  - [Putting Ideas Into Words](https://paulgraham.com/words.html) - Paul Graham
  - [Chance for Peace](https://en.wikipedia.org/wiki/Chance_for_Peace_speech) -  Dwight D. Eisenhower
+ - [The Math Ceiling: Where’s your cognitive breaking point?](https://mathwithbaddrawings.com/2015/04/08/the-math-ceiling-wheres-your-cognitive-breaking-point/) - Ben Orlin
 
 ### china
  - [Sixth Tone](https://www.sixthtone.com/)
