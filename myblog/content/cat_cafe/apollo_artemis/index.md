@@ -2,7 +2,7 @@
 title: Apollo and Artemis
 date: 2025-04-06
 description: Lawrence Chen's Cats
-extra: {"featured_image" : "/cat_cafe/apollo_artemis/apollo_artemis_4.jpeg"}
+extra: {"featured_image" : "/cat_cafe/apollo_artemis/apollo_artemis_8.jpeg"}
 ---
 
 ## about
