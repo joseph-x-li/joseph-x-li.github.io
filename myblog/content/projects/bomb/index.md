@@ -14,7 +14,7 @@ Teammates: Brian Zhang, Brian Lee
 
 Have you ever eaten food? Well this machine is the perfect device for YOU! Our project elevates instant ramen to a new plane of excellence. Perfect for the typical college student in functionality and aesthetic.
 
-## How it works
+## how it works
 
 Servo-activated noodle dispenser opens door to allow uncooked noodles to slide into boiling water.  
 Another servo-activated cup dispenses MSG-based flavor powder into water to create broth.  
