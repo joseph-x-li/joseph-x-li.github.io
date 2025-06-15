@@ -50,7 +50,7 @@
     {% if page.extra.featured_image %}
     <div style="display: flex; align-items: center;">
       {% set image = resize_image(path=page.extra.featured_image, width=350, height=250, op="fill") %}
-      <img src="{{ image.url }}" style="height: 250px; width: auto; border: 1px solid var(--border-color);">
+      <img src="{{ image.url }}" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
     </div>
     {% endif %}
     <div>
