@@ -3,8 +3,15 @@ title = "books"
 date = 2025-06-01
 +++
 
-<!-- ### The Price of Being Fair
- -  -->
+## The Price of Being Fair - The FairPriceGroup Story
+ - I purchased this book after seeing it in a NTUC FairPrice store when I visited Singapore in 2023.
+ - Chapter 1: NTUC Fairprice is created.
+    - NTUC (National Trades Union Congress) was founded in 1961 and is the only labor union congress in Singapore. It is similar in purpose to AFL-CIO in the United States. 
+    - In the 70s, Singapore experienced heavy inflation. The book never explicitly explains why, but the 1973 oil crisis likely played a part.
+    
+    - NTUC Launches its first cooperative grocery store in Toa Payoh. 
+
+
 
 ### The Founders - Jimmy Soni
  - Chapter 0: There are "constellations of talent" and PayPal was one of them. Other modern examples include Bell Labs and Fairchild Semiconductor. 
