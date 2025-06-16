@@ -1,8 +1,9 @@
 ---
-title: "The Founders"
-description: "Paypal Malfia"
+title: "The Founders [DATE INACCURATE]"
+description: "Story of the Paypal Malfia (READING)"
 extra: {"book_cover" : "/books/2025-06-15_founders/cover.jpg"}
 ---
+
 
 ## Summary
  - Chapter 0: There are "constellations of talent" and PayPal was one of them. Other modern examples include Bell Labs and Fairchild Semiconductor. 

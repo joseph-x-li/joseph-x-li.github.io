@@ -1,6 +1,7 @@
 ---
 title: "The Price of Being Fair"
-description: "The FairPriceGroup Story"
+description: "The FairPriceGroup Story (FINISHED, WRITING)"
+draft: false 
 extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
 ---
 
@@ -22,4 +23,5 @@ extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
    - SEC merges into NTUC Welcome in 1983 to form NTUC FairPrice.
 
  - Chapter 2: FairPrice Housebrand
-   - hi
+ 
+ - Chapter 3:
