@@ -21,9 +21,9 @@
 
 <h2>more stuff</h2>
 <ul style="list-style: none;">
-  <li style="font-size: 1.5em;">{{ self::github_icon() | safe }} <a href="https://github.com/joseph-x-li" target="_blank" rel="noopener noreferrer">github⇗</a></li>
-  <li style="font-size: 1.5em;">{{ self::linkedin_icon() | safe }} <a href="https://linkedin.com/in/joseph-x-li" target="_blank" rel="noopener noreferrer">linkedin⇗</a></li>
-  <li style="font-size: 1.5em;">{{ self::strava_icon() | safe }} <a href="https://www.strava.com/athletes/45137849" target="_blank" rel="noopener noreferrer">strava⇗</a></li>
-  <li style="font-size: 1.5em;">{{ self::youtube_icon() | safe }} <a href="https://www.youtube.com/@josephli3561" target="_blank" rel="noopener noreferrer">youtube⇗</a></li>
+  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/github.html") | safe }}</span> <a href="https://github.com/joseph-x-li" target="_blank" rel="noopener noreferrer">github⇗</a></li>
+  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/linkedin.html") | safe }}</span> <a href="https://linkedin.com/in/joseph-x-li" target="_blank" rel="noopener noreferrer">linkedin⇗</a></li>
+  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/strava.html") | safe }}</span> <a href="https://www.strava.com/athletes/45137849" target="_blank" rel="noopener noreferrer">strava⇗</a></li>
+  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/youtube.html") | safe }}</span> <a href="https://www.youtube.com/@josephli3561" target="_blank" rel="noopener noreferrer">youtube⇗</a></li>
 </ul>
 {% endblock content %}
