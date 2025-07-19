@@ -25,8 +25,8 @@ Communication is done from the controller to the server over ZMQ sockets. The se
 
 ## build pictures
 
-<img src="/projects/jarr/steering.jpeg" height="400"/>  
-<img src="/projects/jarr/partial_assembly.jpeg" height="400"/>
+{{ image(path="/projects/jarr/steering.jpeg", caption="steering assembly") }}
+{{ image(path="/projects/jarr/partial_assembly.jpeg", caption="partial assembly") }}
 
 
 ## what it does

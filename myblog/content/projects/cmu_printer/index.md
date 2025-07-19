@@ -14,7 +14,7 @@ Several of our team members remember when we needed to print magazine size color
 
 ## how it works
 
-<img src="/projects/cmu_printer/printing.png" width="700"/>
+{{ image(path="/projects/cmu_printer/printing.png") }}
 
 Our app uses GPS location services to locate the closest printer that meets the student's specifications (color, print size). It shows the name of the printer, a description of its location, a picture of the printer, and fun facts about the printer's history. It even tells you the approximate distance the student would have to walk to get to the printer. This distance is calculated using an innovative technique known as the Pythagorean Theorem.
 

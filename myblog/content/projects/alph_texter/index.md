@@ -22,4 +22,4 @@ A matplotlib pyplot is embedded as a tkinter widget. It is animated and updates 
 
 Includes functionality for A-Z, Z-A, A-Z (With Spaces), Z-A (With Spaces), A-Z (Shuffled)
 
-<img style="display: block; margin: 0 auto; max-height: 350px; width: auto;" src="/projects/alph_texter/wrong.png"/>
+{{ image(path="/projects/alph_texter/wrong.png") }}

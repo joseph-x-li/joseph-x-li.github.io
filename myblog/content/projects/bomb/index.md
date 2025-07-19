@@ -23,20 +23,20 @@ We used an arduino to control three servos and a water pump.
 
 A key innovation was the creation of an egg cracker, which allows a fresh poached egg to be included in your gourmet meal. I 3d-printed the cracking arm and built the structure out of LEGO beams I brought from home.
 
-<img src="/projects/bomb/saucenoodles.jpg" alt="noodles and sauce" height="350"/>
-<img src="/projects/bomb/lidelectronics.jpg" alt="lid electronics" height="350"/>
-<img src="/projects/bomb/eggcracker.jpg" alt="cracker" height="350"/>
+{{ image(path="/projects/bomb/saucenoodles.jpg", caption="noodles and sauce") }}
+{{ image(path="/projects/bomb/lidelectronics.jpg", caption="lid electronics") }}
+{{ image(path="/projects/bomb/eggcracker.jpg", caption="egg cracker") }}
 
 
 The entire machine is closable, for easy and discrete storage in compact college dorms. This is especially important when the dorm does not allow rice cookers.
 
-![close](/projects/bomb/lid_closes.jpg)
+{{ image(path="/projects/bomb/lid_closes.jpg", caption="lid closes") }}
 
 ## award
 
 We received a giant cake for this amazing creation.
 
-![cake](/projects/bomb/pikachucake.jpg)
+{{ image(path="/projects/bomb/pikachucake.jpg", caption="award cake") }}
 
 ## my contributions
 

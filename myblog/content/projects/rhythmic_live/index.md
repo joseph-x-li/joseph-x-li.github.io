@@ -13,7 +13,7 @@ In a post-COVID world, rhythmic.live aims to bring individuals together through 
 
 ## how it works
 
-<img src='/projects/rhythmic_live/rhythmiclivesplash.png'>
+{{ image(path="/projects/rhythmic_live/rhythmiclivesplash.png") }}
 
 Musicians can join a session that a conductor manages. When the conductor starts the recording session, separate recording sessions are started in each musician's browser. These audio streams are reconstructed in sync and stored. After each recording is finished, the conductor can browse all the recent recordings, listen to them, and get automated algorithmic feedback about tone, timbre, and rhythm.
 

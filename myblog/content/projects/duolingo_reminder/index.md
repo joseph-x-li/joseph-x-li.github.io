@@ -13,7 +13,7 @@ Just do your Duolingo lessons so Duo won't come for your family.
 
 I originally made this because my friend Konwoo had trouble keeping his streak.
 
-<img src="/projects/duolingo_reminder/kimdead.png" width="700"/>
+{{ image(path="/projects/duolingo_reminder/kimdead.png") }}
 
 
 ## how it works
