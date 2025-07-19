@@ -3,6 +3,6 @@
 <div style="text-align: center; margin: 20px 0;">
     <img src="{{ resized_image.url }}" alt="{{ caption | default(value='') }}" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
     {% if caption %}
-    <p style="margin-top: 5px; font-style: italic">{{ caption }}</p>
+    <p style="margin-top: 5px; font-style: italic">{{ caption | markdown | safe }}</p>
     {% endif %}
 </div>
