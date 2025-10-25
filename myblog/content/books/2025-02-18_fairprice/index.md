@@ -1,6 +1,6 @@
 ---
 title: "The Price of Being Fair"
-description: "A story about Singapore's largest grocery chain"
+description: "Singapore's largest grocery chain"
 draft: false 
 extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
 ---
@@ -13,8 +13,8 @@ extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
 
 ## Summary
  - Chapter 1: NTUC Fairprice is created 
-   - NTUC (National Trades Union Congress) was founded in 1961 and is the only labor union congress in Singapore. It is similar in purpose to AFL-CIO in the United States. 
-   - In the 70s, Singapore experienced heavy inflation. The book never explicitly explains why, but the 1973 oil crisis likely played a part.
+   - NTUC (National Trades Union Congress) is founded in 1961 and is the only labor union congress in Singapore. It is similar in purpose to AFL-CIO in the United States. 
+   - In the 70s, Singapore experiences heavy inflation. The book never explicitly explains why, but the 1973 oil crisis likely plays a part.
    - In response to high prices and profiteering during this time, the NTUC launches its first cooperative grocery store in Toa Payoh, called "NTUC Welcome".
    - [PAP Anti-profiteering float in 1973 parade](https://www.nas.gov.sg/archivesonline/photographs/record-details/dd468526-1161-11e3-83d5-0050568939ad). It reads "打倒奸商 稳定物价 DOWN WITH PROFITEERING" (ZH: ELIMINATE PROFITEERING, STABILIZE PRICES).  
    {{ image(
@@ -22,7 +22,7 @@ extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
       caption='[PAP Anti-profiteering float in 1972 parade](https://www.nas.gov.sg/archivesonline/photographs/record-details/dd468526-1161-11e3-83d5-0050568939ad)  
                 "打倒奸商 稳定物价 DOWN WITH PROFITEERING"'
    ) }}
-   - PAP MP Phey Yew Kok launches two other cooperative grocery stores under SILO union and PIEU union. He is charged with misappropriation of funds and fleeds the country, leaving these two stores leaderless. 
+   - PAP MP Phey Yew Kok launches two other cooperative grocery stores under SILO union and PIEU union. He is charged with misappropriation of funds and flees the country, leaving these two stores leaderless. 
    - SILO and PIEU merge in 1981 to form SEC.
    - SEC merges into NTUC Welcome in 1983 to form NTUC FairPrice.
 
@@ -43,10 +43,35 @@ extra: {"book_cover" : "/books/2025-02-18_fairprice/cover.jpg"}
  - Chapter 5: Convenience Stores
    - FairPrice decides to open convenience stores in the mid 1990s, competing with 7-Eleven which had 100 stores in Singapore at that time.
    - They open 13 stores far away from existing 7-Eleven locations before exiting stealth in the year 2000. 
-   - Growth is tough because 7-Eleven has already taken the good locations. Additionally, sales of hot food items must compete with hawker centers, crushing sales.
+   - Growth is tough because 7-Eleven has already taken the good locations. Additionally, sales of hot food items must compete with hawker centers. This crushes sales.
    - FairPrice is given a great opportunity to expand when ExxonMobil decides to offload operations of gas-station conveninece stores to someone else and picks FairPrice.
    - In 2005, FairPrice takes over all 77 Esso gas station convenience stores. Esso is the brand name of ExxonMobil's gasoline.
-   - FairPrice operates two convenicnce store brands: Cheers and FairPrice Xpress. Cheers is strictly a convenience store, while Xpress consists of a mini grocery store in addition to the convenience store.
+   - FairPrice operates two convenicnce store brands: Cheers and FairPrice Xpress. Cheers is strictly a convenience store. Xpress consists of a mini grocery store in addition to the convenience store.
    {{ image(path="/books/2025-02-18_fairprice/esso.png", caption="Esso gas station with a FairPrice Xpress in Ang Mo Kio") }}
 
- - Chapter 6: 
+ - Chapter 6: Destroying French retailer Carrefour
+   - In 1997, multinational French retailer Carrefour decides to open hypermarts in Singapore. 
+   - Hypermarts carry large consumer goods in addition to groceries. They are close in style to Target, while FairPrice is more similar to Whole Foods or Trader Joes.
+   - Carrefour opens it first hypermart in a shopping mall called "Suntec City", located near the central business district of Singapore.
+   - In response, FairPrice opens a store in a nearby shopping mall called "Plaza Singapura".
+   - Carrefour attempts to open its second hypermart in Hougang, a region in Singapore's northeast. A developer is opening a new mall there called "Hougang 1" and is looking for a grocery store to anchor the mall.
+   - To prevent Carrefour from getting a solid foothold in Singapore, FairPrice tells the developer it will match Carrefour's bid.
+   - The deal with Carrefour falls through, leaving FairPrice with the lease. 
+   {{ image(path="/books/2025-02-18_fairprice/hougang.png", caption="The Hougang 1 mall with a FairPrice Xtra sign") }}
+   - In 2003, Carrefour finally opens its second store in Plaza Singapura, the same mall where FairPrice opened its own store to compete with Carrefour's Suntec City location.
+   - Carrefour's locations are located within the ERP tolling zone, which means most store traffic occurs on weekends when the ERP toll is not enforced. To choke off Carrefour's sales on these crucial weekends, FairPrice runs special discounts on all stores during weekends.
+   - Carrefour pulls out of Singapore in 2012, selling its locations to FairPrice.
+
+ - Chapter 7: Defending against Singaporean retailer Sheng Siong
+   - Remember the mini scandal in Chapter 1 where Phey Yew Kok launches his own illicit line of stores? These stores were called Savewell.
+   - When Phey Yew Kok flees Singapore, he sells the Ang Mo Kio Savewell outlet to the man running the pork counter at that location.
+   - That man is called Lim Hock Chee. He and his brothers rebrand Savewell to Sheng Siong. It is known for being very cheap and having wet-markets.
+   - Sheng Siong builds a reputation for being THE cheapest retailer -- even cheaper than FairPrice.
+   - FairPrice begins rolling out stores that resemble wet markets to directly compete with Sheng Siong. 
+   - The book acknowledges that Sheng Siong has an operational edge. In 2021, they reported S$133 million net profit on S$1.4 billion in revenue, yielding net profit margins close to 10%. FairPrice, by comparison, reported S$99.7 million net profit on S$4.3 billion revenue, for a net profit margin of roughly 4.3%.
+
+   {{ image(path="/books/2025-02-18_fairprice/shengsiong.png", caption="Fish market section at a Seng Siong location") }}
+
+ - Chapter 8: Dealing with Singaporean retailer Cold Storage
+ 
+

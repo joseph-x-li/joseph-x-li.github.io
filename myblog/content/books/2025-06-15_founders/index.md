@@ -1,6 +1,6 @@
 ---
 title: "The Founders"
-description: "Story of the Paypal Malfia"
+description: "The Paypal Malfia"
 extra: {"book_cover" : "/books/2025-06-15_founders/cover.jpg"}
 ---
 
