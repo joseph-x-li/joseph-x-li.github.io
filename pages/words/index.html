@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="/favicon2.ico" type="image/x-icon">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <style>
+    :root {
+      /* Light theme (default) */
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --link-color: #000000;
+      --border-color: #000000;
+    }
+
+    [data-theme="dark"] {
+      /* Dark theme */
+      --bg-color: #1a1a1a;
+      --text-color: #eeeeee;
+      --link-color: #eeeeee;
+      --border-color: #eeeeee;
+    }
+
+    body {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Responsive container for content */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Responsive margins based on screen size */
+    @media (min-width: 768px) {
+      .content-container {
+        padding: 0 60px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .content-container {
+        padding: 0 100px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .content-container {
+        padding: 0 150px;
+      }
+    }
+
+    /* For very large screens, add even more margin */
+    @media (min-width: 1920px) {
+      .content-container {
+        padding: 0 200px;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    h5 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:visited {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+
+    /* Ensure all borders use the theme color */
+    * {
+      border-color: var(--border-color);
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      display: inline-block;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"><img src="https://emojicdn.elk.sh/🌘?style=apple" alt="🌘" style="height: 1em; vertical-align: -0.1em;"></button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button"><img src="https://emojicdn.elk.sh/⬅️?style=apple" alt="⬅️" style="height: 1em; vertical-align: -0.1em;"></a>
+     
+    
+<article>
+  <h1>
+    <div style="text-align: center;">words of wisdom</div>
+  </h1>
+  <p style="text-align: center;">
+    2025-04-08<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+  <p>These used to be written down on an index card inside my desk. Then, I moved them to a spreadsheet. Now, they are here.</p>
+<p>These cross my mind most often.</p>
+<ul>
+<li>You are the average of your five closest friends.</li>
+<li>Being on time is not a talent.
+<ul>
+<li>At the beginning of my internship at IBM, they put us all in a giant video call and gave out a bunch of advice. This is the only one that stuck.</li>
+</ul>
+</li>
+<li>For every hour you dedicate to learning, dedicate two to application. Impose a limit on your research time.</li>
+<li>99% of people do not step out of their comfort zone.</li>
+<li>An alarm is a promise you made to yourself. Do not break that promise.
+<ul>
+<li>I think I made this one up.</li>
+</ul>
+</li>
+<li>As you become an adult, you realize that things around you weren't just always there; people made them happen.<br />
+But only recently have I started to internalize how much tenacity <em>everything</em> requires.<br />
+That hotel, that park, that railway. The world is a museum of passion projects.<br />
+— John Collison, Co-founder of Stripe</li>
+<li>It works IF you keep going.</li>
+<li>If someone watched you for a week, would they believe you’re serious about your goals?</li>
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    // Theme management
+    const ThemeManager = {
+      themes: {
+        light: { emoji: '🌘' },
+        dark: { emoji: '🌕' }
+      },
+
+      init() {
+        // Set initial theme based on saved preference or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        this.setTheme(initialTheme);
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light');
+          }
+        });
+      },
+
+      setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        const emoji = this.themes[theme].emoji;
+        document.querySelector('.theme-toggle img').src = `https://emojicdn.elk.sh/${emoji}?style=apple`;
+        localStorage.setItem('theme', theme);
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      }
+    };
+
+    // Initialize theme manager
+    ThemeManager.init();
+
+    // Update button click handler
+    document.querySelector('.theme-toggle').onclick = () => ThemeManager.toggle();
+  </script>
+</body>
+
+</html>
