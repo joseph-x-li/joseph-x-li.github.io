@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="/favicon2.ico" type="image/x-icon">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <style>
+    :root {
+      /* Light theme (default) */
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --link-color: #000000;
+      --border-color: #000000;
+    }
+
+    [data-theme="dark"] {
+      /* Dark theme */
+      --bg-color: #1a1a1a;
+      --text-color: #eeeeee;
+      --link-color: #eeeeee;
+      --border-color: #eeeeee;
+    }
+
+    body {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Responsive container for content */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Responsive margins based on screen size */
+    @media (min-width: 768px) {
+      .content-container {
+        padding: 0 60px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .content-container {
+        padding: 0 100px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .content-container {
+        padding: 0 150px;
+      }
+    }
+
+    /* For very large screens, add even more margin */
+    @media (min-width: 1920px) {
+      .content-container {
+        padding: 0 200px;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    h5 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:visited {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+
+    /* Ensure all borders use the theme color */
+    * {
+      border-color: var(--border-color);
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      display: inline-block;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"><img src="https://emojicdn.elk.sh/🌘?style=apple" alt="🌘" style="height: 1em; vertical-align: -0.1em;"></button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button"><img src="https://emojicdn.elk.sh/⬅️?style=apple" alt="⬅️" style="height: 1em; vertical-align: -0.1em;"></a>
+     
+    
+<article>
+  <h1>
+    <div style="text-align: center;">rhythmic live @ hackmit</div>
+  </h1>
+  <p style="text-align: center;">
+    2020-09-20<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/projects/rhythmic_live/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/projects/rhythmic_live/#how-it-works">how it works</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/projects/rhythmic_live/#my-contribution">my contribution</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#24292F" class="bi bi-github" viewBox="0 0 16 16">
+  <!-- White circle background. If I set radius to 8, the circle bleeds outside the logo a bit. -->
+  <circle cx="8" cy="8" r="7.5" fill="#fff"/>
+  <!-- GitHub logo path -->
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg> <a href="http://github.com/rhythmic-live">Github⇗</a><br />
+Teammates: Konwoo Kim, Edward Li, Mason Xiao</p>
+<p>In a post-COVID world, rhythmic.live aims to bring individuals together through music. Our platform provides audio synchronization, interactive and browser-compatible sheet music, as well as informative analytics to improve your skills—all packaged together in a simple yet elegant design. Whether you're part of an aspiring a cappella group or just having some fun with friends, perform your next musical adventure with rhythmic.live!</p>
+<h2 id="how-it-works">how it works</h2>
+
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;rhythmiclivesplash.7d62d53383ad3cb3.png" alt="" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
+    
+</div>
+<p>Musicians can join a session that a conductor manages. When the conductor starts the recording session, separate recording sessions are started in each musician's browser. These audio streams are reconstructed in sync and stored. After each recording is finished, the conductor can browse all the recent recordings, listen to them, and get automated algorithmic feedback about tone, timbre, and rhythm.</p>
+<h2 id="my-contribution">my contribution</h2>
+<p>I created a socket.io server using python to handle xml distribution, participant synchronization, and audio distribution and splicing. Also designed some of the javascript audio recording backend.</p>
+
+</article>
+
+  </div>
+
+  <script>
+    // Theme management
+    const ThemeManager = {
+      themes: {
+        light: { emoji: '🌘' },
+        dark: { emoji: '🌕' }
+      },
+
+      init() {
+        // Set initial theme based on saved preference or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        this.setTheme(initialTheme);
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light');
+          }
+        });
+      },
+
+      setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        const emoji = this.themes[theme].emoji;
+        document.querySelector('.theme-toggle img').src = `https://emojicdn.elk.sh/${emoji}?style=apple`;
+        localStorage.setItem('theme', theme);
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      }
+    };
+
+    // Initialize theme manager
+    ThemeManager.init();
+
+    // Update button click handler
+    document.querySelector('.theme-toggle').onclick = () => ThemeManager.toggle();
+  </script>
+</body>
+
+</html>

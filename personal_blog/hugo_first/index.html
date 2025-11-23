@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="/favicon2.ico" type="image/x-icon">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <style>
+    :root {
+      /* Light theme (default) */
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --link-color: #000000;
+      --border-color: #000000;
+    }
+
+    [data-theme="dark"] {
+      /* Dark theme */
+      --bg-color: #1a1a1a;
+      --text-color: #eeeeee;
+      --link-color: #eeeeee;
+      --border-color: #eeeeee;
+    }
+
+    body {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Responsive container for content */
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Responsive margins based on screen size */
+    @media (min-width: 768px) {
+      .content-container {
+        padding: 0 60px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .content-container {
+        padding: 0 100px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .content-container {
+        padding: 0 150px;
+      }
+    }
+
+    /* For very large screens, add even more margin */
+    @media (min-width: 1920px) {
+      .content-container {
+        padding: 0 200px;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    h5 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+    a:visited {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+
+    /* Ensure all borders use the theme color */
+    * {
+      border-color: var(--border-color);
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      display: inline-block;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"><img src="https://emojicdn.elk.sh/🌘?style=apple" alt="🌘" style="height: 1em; vertical-align: -0.1em;"></button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button"><img src="https://emojicdn.elk.sh/⬅️?style=apple" alt="⬅️" style="height: 1em; vertical-align: -0.1em;"></a>
+     
+    
+<article>
+  <h1>
+    <div style="text-align: center;">2022 New Year and New Website</div>
+  </h1>
+  <p style="text-align: center;">
+    2021-12-31<br>
+    <small> 7 mins </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#new-website">New Website</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#a-reflection-on-2021">A Reflection on 2021</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#human-languages">Human Languages</a>
+                  </li>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#computer-languages">Computer Languages</a>
+                  </li>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#habits">Habits</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#goals-for-2022">Goals for 2022</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#human-languages-1">Human Languages</a>
+                  </li>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#computer-languages-1">Computer Languages</a>
+                  </li>
+                
+                  <li>
+                    <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/#habits-1">Habits</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="new-website">New Website</h2>
+<p>This blog post is the first on a new website powered by Hugo (past posts were imported). I spent way too long looking for an alternative to the abomination that is Jekyll along with its horrific Ruby version conflicts. Having found and settled on a better format for my online presence, I have some sort of desire to find and settle on better personal goals. If you sweep the corner of a room, might as well sweep it entirely, so to say. As we approach 2022, one might call these goals "New Year's Resolutions", but I'd like to avoid restricting self improvement as an annual event, even if only nominally.</p>
+<h2 id="a-reflection-on-2021">A Reflection on 2021</h2>
+<p>The following are aspects of life I gave conscious thought to during 2021. I just said I was going to refrain from a yearly-themed self-help format, but this is just easier. Sue me.</p>
+<h3 id="human-languages">Human Languages</h3>
+<ul>
+<li><strong>Chinese:</strong> For roughly 100 days, I routinely studied Chinese vocabulary using the "Daily Chinese" app. When I entered the fall semester of my Junior year, this habit quickly fell apart due to a seemingly unrelated event: my bathroom became too close to my bed. <br></br>
+Before returning to campus, I had developed the following routine at home: Immediately after waking up, I walked across the house to the bathroom to remove and wash my retainers. As I had already spent the effort getting up and going to the bathroom, I might as well brush my teeth, right? Here is where I squeeze in my Chinese flashcard practice. I hope you can see where this is going.
+<br></br>
+In college, the bathroom is just three steps away from my bed. Every morning, I hear my alarm, take three steps into the bathroom, put away my retainers, then throw myself back into bed and fall asleep. I have just successfully nuked two habits at once: my Chinese flashcard practice and brushing my teeth in the morning.</li>
+</ul>
+ <!-- <br></br>
+ Within this experience, there is probably something to be said about how to consciously construct and maintain good habits. I recently found this idea is formalized as "piggybacking" by Wendy Wood in a recent _Hidden Brain_ Podcast ["Creatures of Habit"](https://hiddenbrain.org/podcast/creatures-of-habit/) 43:30, and I am sure the hundreds of other self-help literature explain a similar idea. It will probably be good to design  -->
+<ul>
+<li>
+<p><strong>Japanese:</strong> I kept up my daily Japanese lessons on Duolingo. Duolingo says I spent 3610 minutes in 2021 learning languages. I estimate 80% of that went to Japanese (rest Chinese), so we are looking at 48 hours of learning. The Duolingo streak is what keeps me going. It is not difficult to imagine how streaks motivate a daily habit, but they do require an "audience". For instance, in Snapchat, the streak's "audience" is the receiving party i.e. whoever is keeping the streak with you. This is the person who will notice that you broke a streak. For Duolingo, the concept of an "audience" doesn't really exist, at least not by default.
+<img src="2021_duolingo.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px">
+To construct an audience in Duolingo, you must add friends who are completing language lessons on the app as well. The problem is finding similarly motivated friends, which becomes a sort of chicken and egg dilemma. Indeed, many of my friends expressed interest in using Duolingo but were wholly unmotivated to commit to a daily task. I eventually figured out a decent system to motivate these bumpkins. You can leverage the idea that people will assign somewhat greater importance to direct messages from real people. Thus, Fb-Duolingo was born: a way to incentivize people to commit to maintaining their Duolingo streak by sending them direct messages on Facebook Messenger when they were about to break a streak. The message explicitly states that they are about to break a "## days long" streak. A bit in the face, but you have to light the fire under their asses.</p>
+</li>
+<li>
+<p><strong>English:</strong> My vocabulary list is built up to roughly 90 words, starting at "abstruse" and ending at "vicissitude". There were no plans to actually study these words; I only gathered them.</p>
+</li>
+</ul>
+<h3 id="computer-languages">Computer Languages</h3>
+<ul>
+<li><code>C</code>: Not much happened here, except in compilers where I implemented a Cilk-like runtime for C0 and encountered errors I never knew were possible. We all know <code>SIGSEGV</code>, but have you seen <code>SIGBUS</code>? Somehow, I also got <code>SIGILL</code> when doing <code>-fPIE</code> stuff.</li>
+<li><code>C++</code>: I spent two weeks taking notes and trying examples from the website <a href="https://www.learncpp.com/">learncpp.com</a>. I made it from Chapter 1 to 17. Chapters 18+ appear to be mostly fancy C++11 stuff and move semantics aka trying to become Rust.</li>
+<li><code>Rust</code>: I did almost all 15451 programming assignments in Rust. Funnily, when I did the last assignment, I submitted it and on the first try, got 25/25 and 1st place on the code speed leaderboard. The bulk of my Rust improvement happened in Compilers where Konwoo and I struggled against the borrow checker with the help of Github Copilot (courtesy of Edward Li).</li>
+<li><code>Python</code>: Big year for Python. Pystreaming, warehouse-robots, IBM internship, and a few other side projects.</li>
+</ul>
+<h3 id="habits">Habits</h3>
+<ul>
+<li>I stopped using my phone while in bed right after I got back on campus. It was like quitting cold turkey. I decided it was a horrible practice so I suddenly decided to stop.</li>
+<li>I didn't really set any concrete goals to hit by the end of 2021, so there's not much else to say here. Being at home most of the year due to COVID lulled me back into being a lazy highschooler. Having my nagging parents around didn't help either. But I was able to bike a lot, so let's be grateful for that.</li>
+</ul>
+<h2 id="goals-for-2022">Goals for 2022</h2>
+<h3 id="human-languages-1">Human Languages</h3>
+<ul>
+<li><strong>Chinese:</strong> If all goes well, I should be brushing my teeth in the morning again, so hopefully this habit will naturally regrow. To supplement the flashcard app, I have written and am planning to write translations for Chinese songs, newspaper articles, and other media.</li>
+<li><strong>Japanese:</strong> Keep Duolingo going strong. I got Duolingo Premium on a huge new year sale -- I use this app a lot, so why not pay for it and make it a more pleasant experience. I hope I can reach JLPT N4 level by the end of 2022.</li>
+<li><strong>Korean:</strong> Be able to quickly read Korean. I am not too interested in understanding Korean, I just want to be able to quickly read it. This is mostly so that I can actually sing the Korean songs that people queue up on karaoke machines. Also, this completes the CJK trio. In middle school, I had some weird goal of being able to read CJK. It looks like it will soon be realized.</li>
+<li><strong>English:</strong> Actually study the word list I made in 2021. Using Quizlet, this shouldn't be too hard.</li>
+</ul>
+<h3 id="computer-languages-1">Computer Languages</h3>
+<ul>
+<li><code>C</code>: Either I will need this a lot, or not at all, at my Nvidia internship. I hope its the former since I am sick of writing Python and I want to do some lower level performance-critical stuff.</li>
+<li><code>C++</code>: Try to learn this language's god forsaken inheritance and templating features.</li>
+<li><code>Rust</code>: Take Jack and Cooper's "Shilling the Rust Language" Stuco. Contribute to some open source projects. Create some cool web thing as Rust is good for web stuff it seems.</li>
+<li><code>Python</code>: Try out Cython and successfully create and link a Rust/C++/C extension to Python. This could be done by writing a simple C extension into pystreaming.</li>
+</ul>
+<h3 id="habits-1">Habits</h3>
+<ul>
+<li>Don't use your phone while trying to sleep. I did well in 2021, let's see how it goes in 2022.</li>
+<li>Actually go to lectures, or at least wake up before lectures begin. The 8:30am Compilers lecture is gone, so there is no excuse now.</li>
+<li>No eating snacks, especially close to bedtime. Possibly enforce this by throwing away existing snacks then bankrupting myself so that I cannot buy more.</li>
+<li>Hit the gym; it's literally downstairs.</li>
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    // Theme management
+    const ThemeManager = {
+      themes: {
+        light: { emoji: '🌘' },
+        dark: { emoji: '🌕' }
+      },
+
+      init() {
+        // Set initial theme based on saved preference or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        
+        this.setTheme(initialTheme);
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light');
+          }
+        });
+      },
+
+      setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        const emoji = this.themes[theme].emoji;
+        document.querySelector('.theme-toggle img').src = `https://emojicdn.elk.sh/${emoji}?style=apple`;
+        localStorage.setItem('theme', theme);
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      }
+    };
+
+    // Initialize theme manager
+    ThemeManager.init();
+
+    // Update button click handler
+    document.querySelector('.theme-toggle').onclick = () => ThemeManager.toggle();
+  </script>
+</body>
+
+</html>
