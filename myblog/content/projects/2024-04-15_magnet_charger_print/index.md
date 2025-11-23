@@ -1,13 +1,13 @@
-+++
-title = "3d printed tray for wireless charger"
-extra = {"featured_image" = "/personal_blog/magnet_charger_print/finished.jpeg"}
-+++
+---
+title: "3d printed tray for wireless charger"
+extra: {"featured_image": "/projects/2024-04-15_magnet_charger_print/finished.jpeg"}
+---
 
 ## the problem 
 
 I recently purchased an "Anker MagGo Wireless Charging Station (3-in-1 Pad)" to reduce the clutter on my desk at home and at work.
 
-<img src="pad.png" style="height: 350px; width: auto; border: 1px solid black;">
+{{ image(path="/projects/2024-04-15_magnet_charger_print/pad.png", caption="Anker MagGo Wireless Charging Station (3-in-1 Pad)") }}
 
 It is difficult to align my airpods with the center charger.  
  - If the airpods do not align, then they will not charge.  
@@ -19,7 +19,5 @@ It is difficult to align my airpods with the center charger.
 📐 [CAD⇗](https://cad.onshape.com/documents/adafd8c0a8e7a8e844d16a05/w/d0c63042982a36d91585d415/e/6c5c6ab4ed946ac91684c114?renderMode=0&uiState=67ff16011409cc4afc0876d8)  
 I made a tray so the airpods would slide into the correct place every time. 
 
-
-<img src="proto.jpeg" style="height: 350px; width: auto; border: 1px solid black;">
-<img src="finished.jpeg" style="height: 350px; width: auto; border: 1px solid black;">
-<img src="anim.webp" style="height: 350px; width: auto; border: 1px solid black;">
+{{ image(path="/projects/2024-04-15_magnet_charger_print/finished.jpeg") }}
+{{ image(path="/projects/2024-04-15_magnet_charger_print/last_frame.png") }}

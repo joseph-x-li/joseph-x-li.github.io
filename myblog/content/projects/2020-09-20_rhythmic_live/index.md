@@ -1,8 +1,7 @@
 ---
 title: "rhythmic live @ hackmit"
 description: Synchronous music rehersal and recording over the internet. Won NASDAQ Live Music challenge.
-date: 2020-09-20
-extra: {"featured_image" : "/projects/rhythmic_live/rhythmiclivesplash.png"}
+extra: {"featured_image": "/projects/2020-09-20_rhythmic_live/rhythmiclivesplash.png"}
 ---
 ## about
 
@@ -13,7 +12,7 @@ In a post-COVID world, rhythmic.live aims to bring individuals together through 
 
 ## how it works
 
-{{ image(path="/projects/rhythmic_live/rhythmiclivesplash.png") }}
+{{ image(path="/projects/2020-09-20_rhythmic_live/rhythmiclivesplash.png") }}
 
 Musicians can join a session that a conductor manages. When the conductor starts the recording session, separate recording sessions are started in each musician's browser. These audio streams are reconstructed in sync and stored. After each recording is finished, the conductor can browse all the recent recordings, listen to them, and get automated algorithmic feedback about tone, timbre, and rhythm.
 

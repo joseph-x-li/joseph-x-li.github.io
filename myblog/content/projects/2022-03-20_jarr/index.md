@@ -1,8 +1,7 @@
 ---
 title: "JARR (just another rescue robot) @ hackberry pi"
 description: "Search and rescue robot built on a Raspberry Pi. Won Best Hardware Hack"
-date: 2022-03-20
-extra: {"featured_image" : "/projects/jarr/full.jpeg"}
+extra: {"featured_image": "/projects/2022-03-20_jarr/full.jpeg"}
 ---
 
 ## about
@@ -25,8 +24,8 @@ Communication is done from the controller to the server over ZMQ sockets. The se
 
 ## build pictures
 
-{{ image(path="/projects/jarr/steering.jpeg", caption="steering assembly") }}
-{{ image(path="/projects/jarr/partial_assembly.jpeg", caption="partial assembly") }}
+{{ image(path="/projects/2022-03-20_jarr/steering.jpeg", caption="steering assembly") }}
+{{ image(path="/projects/2022-03-20_jarr/partial_assembly.jpeg", caption="partial assembly") }}
 
 
 ## what it does

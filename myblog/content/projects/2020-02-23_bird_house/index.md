@@ -1,8 +1,7 @@
 ---
 title: "iot bird house @ makemit"
 description: "Bringing ornithological research into the 21st century."
-date: 2020-02-23
-extra: {"featured_image": "/projects/bird_house/splash.jpg"}
+extra: {"featured_image": "/projects/2020-02-23_bird_house/splash.jpg"}
 ---
 
 ## about
@@ -16,8 +15,8 @@ In the past, studying bird migrations and populations has always been a articula
 
 Our IOT birdhouse seeks to automate the process of birdwatching. It features servos to dispense bird feed for passing birds. An ultrasonic sensor activates a camera to take a picture of the bird in the birdhouse. The images are saved and can be viewed using a website.
 
-{{ image(path="/projects/bird_house/feed.jpg", caption="Bird feed dispenser mechanism") }}
+{{ image(path="/projects/2020-02-23_bird_house/feed.jpg", caption="Bird feed dispenser mechanism") }}
 
 The bird house was created using laser-cut acrylic and wood. 
 
-{{ image(path="/projects/bird_house/gallery2.jpg", caption="front") }}
+{{ image(path="/projects/2020-02-23_bird_house/gallery2.jpg", caption="front") }}

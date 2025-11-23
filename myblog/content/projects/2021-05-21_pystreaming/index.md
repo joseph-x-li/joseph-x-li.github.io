@@ -1,8 +1,7 @@
 ---
 title: "pystreaming"
 description: "python library for streaming video"
-date: 2021-05-21
-extra: {"featured_image" : "/projects/pystreaming/logo.png"}
+extra: {"featured_image": "/projects/2021-05-21_pystreaming/logo.png"}
 draft: true
 ---
 

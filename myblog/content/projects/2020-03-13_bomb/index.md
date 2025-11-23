@@ -1,8 +1,7 @@
 ---
 title: "ramen bot @ tartanhacks"
 description: "Automating a classic college experience. Won Spiciest Meme Award."
-date: 2020-03-13
-extra: {"featured_image": "/projects/bomb/ramensplash.jpg"}
+extra: {"featured_image": "/projects/2020-03-13_bomb/ramensplash.jpg"}
 ---
 
 ## about
@@ -23,20 +22,20 @@ We used an arduino to control three servos and a water pump.
 
 A key innovation was the creation of an egg cracker, which allows a fresh poached egg to be included in your gourmet meal. I 3d-printed the cracking arm and built the structure out of LEGO beams I brought from home.
 
-{{ image(path="/projects/bomb/saucenoodles.jpg", caption="noodles and sauce") }}
-{{ image(path="/projects/bomb/lidelectronics.jpg", caption="lid electronics") }}
-{{ image(path="/projects/bomb/eggcracker.jpg", caption="egg cracker") }}
+{{ image(path="/projects/2020-03-13_bomb/saucenoodles.jpg", caption="noodles and sauce") }}
+{{ image(path="/projects/2020-03-13_bomb/lidelectronics.jpg", caption="lid electronics") }}
+{{ image(path="/projects/2020-03-13_bomb/eggcracker.jpg", caption="egg cracker") }}
 
 
 The entire machine is closable, for easy and discrete storage in compact college dorms. This is especially important when the dorm does not allow rice cookers.
 
-{{ image(path="/projects/bomb/lid_closes.jpg", caption="lid closes") }}
+{{ image(path="/projects/2020-03-13_bomb/lid_closes.jpg", caption="lid closes") }}
 
 ## award
 
 We received a giant cake for this amazing creation.
 
-{{ image(path="/projects/bomb/pikachucake.jpg", caption="award cake") }}
+{{ image(path="/projects/2020-03-13_bomb/pikachucake.jpg", caption="award cake") }}
 
 ## my contributions
 

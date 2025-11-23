@@ -1,8 +1,7 @@
 ---
 title: "alphabet texter"
 description: Tkinter app to bring alphabet typing skills to the next level.
-date: 2020-12-30
-extra: {"featured_image": "/projects/alph_texter/splash.png"}
+extra: {"featured_image": "/projects/2020-12-30_alph_texter/splash.png"}
 ---
 
 ## about
@@ -22,4 +21,4 @@ A matplotlib pyplot is embedded as a tkinter widget. It is animated and updates 
 
 Includes functionality for A-Z, Z-A, A-Z (With Spaces), Z-A (With Spaces), A-Z (Shuffled)
 
-{{ image(path="/projects/alph_texter/wrong.png") }}
+{{ image(path="/projects/2020-12-30_alph_texter/wrong.png") }}
