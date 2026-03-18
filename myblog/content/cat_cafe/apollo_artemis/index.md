@@ -9,7 +9,7 @@ extra: {"featured_image" : "/cat_cafe/apollo_artemis/apollo_artemis_8.jpeg"}
 
 **Location:** Sunnyvale, California  
 **Owner:** Lawrence Chen  
-**Breed:** Apollo & Artemis: American Shorthair  
+**Breed:** Apollo: American Shorthair; Artemis: American Shorthair  
 **Sex:** Apollo: Male; Artemis: Female  
 
 Artemis is the gray one, so-called because Artemis is a female and the goddess of the moon.  
