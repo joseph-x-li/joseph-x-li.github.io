@@ -1,7 +1,7 @@
 ---
 title: Oreo and Olaf
 date: 2026-03-17
-description: "Cat cafe"
+description: "Ta Jarusirawong's Cats"
 extra: {"featured_image" : "/cat_cafe/oreo_olaf/oreo_1.jpeg"}
 ---
 
