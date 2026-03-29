@@ -12,15 +12,10 @@ extra: {"featured_image" : "/cat_cafe/oreo_olaf/oreo_1.jpeg"}
 **Breed:** Oreo: American Shorthair; Olaf: American Shorthair  
 **Sex:** Oreo: Male; Olaf: Male  
 
-Write a short combined intro here (how you know them, personalities, etc).
+Olaf was born on a Christmas (2022-12-25) in a shelter, never been on a street.  
 
-## oreo
+Oreo likes to be picked up and hugged especially in bathrooms for some reason.  
 
-Add Oreo-specific details here.
-
-## olaf
-
-Add Olaf-specific details here.
 
 <head>
 <link rel="stylesheet" href="/cat_cafe/collage.css">
