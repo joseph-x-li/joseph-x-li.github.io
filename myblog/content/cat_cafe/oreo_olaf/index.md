@@ -2,13 +2,13 @@
 title: Oreo and Olaf
 date: 2026-03-17
 description: "Ta Jarusirawong's Cats"
-extra: {"featured_image" : "/cat_cafe/oreo_olaf/oreo_1.jpeg"}
+extra: {"featured_image" : "/cat_cafe/oreo_olaf/oreo_olaf.jpeg"}
 ---
 
 ## about
 
 **Location:** Jersey City, NJ  
-**Owner:** Ta Jarusirawong and Ice  
+**Owner:** Ta Jarusirawong and Ice Rungaroon  
 **Breed:** Oreo: American Shorthair; Olaf: American Shorthair  
 **Sex:** Oreo: Male; Olaf: Male  
 
