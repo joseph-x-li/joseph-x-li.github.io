@@ -16,21 +16,15 @@ Olaf was born on a Christmas (2022-12-25) in a shelter, never been on a street.
 
 Oreo likes to be picked up and hugged especially in bathrooms for some reason.  
 
-
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 ## gallery
 
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/oreo_olaf/oreo_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/oreo_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/oreo_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/oreo_4.jpeg"></li>
-
-  <li class="item"><img src="/cat_cafe/oreo_olaf/olaf_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/olaf_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/olaf_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/oreo_olaf/olaf_4.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/oreo_olaf/oreo_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/oreo_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/oreo_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/oreo_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/olaf_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/olaf_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/olaf_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/oreo_olaf/olaf_4.jpeg") }}
 </ul>

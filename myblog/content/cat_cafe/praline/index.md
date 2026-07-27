@@ -14,15 +14,11 @@ extra: {"featured_image" : "/cat_cafe/praline/praline_1.jpeg"}
 
 Praline has been caught playing poker. She is old and might pass soon. Please pray for Praline!!!  
 
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 ## gallery
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/praline/praline_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/praline/praline_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/praline/praline_4.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/praline/praline_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/praline/praline_5.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/praline/praline_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/praline/praline_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/praline/praline_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/praline/praline_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/praline/praline_5.jpeg") }}
 </ul>

@@ -1,8 +1,8 @@
 {% set resized_image = resize_image(path=path, height=350, op="fit_height") %}
 
-<div style="text-align: center; margin: 20px 0;">
-    <img src="{{ resized_image.url }}" alt="{{ caption | default(value='') }}" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
+<div class="figure">
+    <img src="{{ resized_image.url }}" alt="{{ caption | default(value='') }}">
     {% if caption %}
-    <p style="margin-top: 5px; font-style: italic">{{ caption | markdown | safe }}</p>
+    <p class="figure-caption">{{ caption | markdown | safe }}</p>
     {% endif %}
 </div>

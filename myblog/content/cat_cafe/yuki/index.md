@@ -18,18 +18,13 @@ Yuki has a feet fetish — he loves to smell and bite feet.
 
 No balls. The vets removed them.  
 
-
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 ## gallery
 
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/yuki/yuki_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/yuki/yuki_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/yuki/yuki_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/yuki/yuki_4.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/yuki/yuki_5.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/yuki/yuki_6.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/yuki/yuki_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/yuki/yuki_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/yuki/yuki_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/yuki/yuki_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/yuki/yuki_5.jpeg") }}
+  {{ collage_image(path="/cat_cafe/yuki/yuki_6.jpeg") }}
 </ul>

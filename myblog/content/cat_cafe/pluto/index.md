@@ -20,21 +20,17 @@ Pluto was the only cat willing to participate in the Thanksgiving cat paw turkey
 
 Pluto recently got stuck in a really tall tree and was brought down by some firefighters. How embarrassing... 
 
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 
 
 ## gallery
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/pluto/pluto_7.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/pluto/pluto_7.jpeg") }}
   <li class="item aspect"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/3t_73hkWFaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_4.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_6.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_5.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/pluto/pluto_8.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/pluto/pluto_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_6.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_5.jpeg") }}
+  {{ collage_image(path="/cat_cafe/pluto/pluto_8.jpeg") }}
 </ul>

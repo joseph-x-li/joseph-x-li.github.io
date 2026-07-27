@@ -14,17 +14,13 @@ extra: {"featured_image" : "/cat_cafe/miaomi/miaomi_6.jpeg"}
 
 Fun Fact: May or may not have contracted COVID-19.
 
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 ## gallery
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_5.JPG"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_4.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_0.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/miaomi/miaomi_7.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_5.JPG") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_0.jpeg") }}
+  {{ collage_image(path="/cat_cafe/miaomi/miaomi_7.jpeg") }}
 </ul>

@@ -1,0 +1,1 @@
+{% set resized = resize_image(path=path, width=700, height=10000, op="fit") %}<li class="item"><img src="{{ resized.url }}" alt="{{ alt | default(value='') }}" loading="lazy"></li>

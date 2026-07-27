@@ -18,21 +18,17 @@ Linda is the brown one.
 
 All three are street cats that were taken in.  
 
-<head>
-<link rel="stylesheet" href="/cat_cafe/collage.css">
-</head>
-
 ## gallery
 <ul class="columns">
-  <li class="item"><img src="/cat_cafe/bpl/bpl_1.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_2.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_3.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_4.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_5.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_6.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_7.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_8.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_9.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_a.jpeg"></li>
-  <li class="item"><img src="/cat_cafe/bpl/bpl_b.jpeg"></li>
+  {{ collage_image(path="/cat_cafe/bpl/bpl_1.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_2.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_3.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_5.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_6.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_7.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_8.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_9.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_a.jpeg") }}
+  {{ collage_image(path="/cat_cafe/bpl/bpl_b.jpeg") }}
 </ul>

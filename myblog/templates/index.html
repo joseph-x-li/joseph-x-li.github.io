@@ -7,23 +7,21 @@
 </h1>
 
 <h2>stuff</h2>
-<ul style="list-style: none;">
-  <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/💬?style=apple" alt="💬" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/personal_blog/_index.md') }}">personal blog</a></li>
-  <!-- <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/📄?style=apple" alt="📄" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/pages/_index.md') }}">pages</a></li> -->
-  <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/🛠️?style=apple" alt="🛠️" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/projects/_index.md') }}">projects</a></li>
-  <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/🐈?style=apple" alt="🐈" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/cat_cafe/_index.md') }}">cat cafe</a></li>
-  <!-- <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/🔗?style=apple" alt="🔗" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/pages/links.md') }}">links to stuff i like</a></li> -->
-  <!-- <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/🦉?style=apple" alt="🦉" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/pages/words.md') }}">words of wisdom</a></li> -->
-  <li style="font-size: 1.5em;"><img src="https://emojicdn.elk.sh/📚?style=apple" alt="📚" style="height: 1em; vertical-align: -0.15em;"> <a href="{{ get_url(path='@/books/_index.md') }}">books</a></li>
-
-
+<ul class="link-list">
+  <li>💬 <a href="{{ get_url(path='@/personal_blog/_index.md') }}">personal blog</a></li>
+  <!-- <li>📄 <a href="{{ get_url(path='@/pages/_index.md') }}">pages</a></li> -->
+  <li>🛠️ <a href="{{ get_url(path='@/projects/_index.md') }}">projects</a></li>
+  <li>🐈 <a href="{{ get_url(path='@/cat_cafe/_index.md') }}">cat cafe</a></li>
+  <!-- <li>🔗 <a href="{{ get_url(path='@/pages/links.md') }}">links to stuff i like</a></li> -->
+  <!-- <li>🦉 <a href="{{ get_url(path='@/pages/words.md') }}">words of wisdom</a></li> -->
+  <li>📚 <a href="{{ get_url(path='@/books/_index.md') }}">books</a></li>
 </ul>
 
 <h2>more stuff</h2>
-<ul style="list-style: none;">
-  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/github.html") | safe }}</span> <a href="https://github.com/joseph-x-li" target="_blank" rel="noopener noreferrer">github⇗</a></li>
-  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/linkedin.html") | safe }}</span> <a href="https://linkedin.com/in/joseph-x-li" target="_blank" rel="noopener noreferrer">linkedin⇗</a></li>
-  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/strava.html") | safe }}</span> <a href="https://www.strava.com/athletes/45137849" target="_blank" rel="noopener noreferrer">strava⇗</a></li>
-  <li style="font-size: 1.5em;"><span style="vertical-align: -0.15em;">{{ load_data(path="templates/shortcodes/youtube.html") | safe }}</span> <a href="https://www.youtube.com/@josephli3561" target="_blank" rel="noopener noreferrer">youtube⇗</a></li>
+<ul class="link-list">
+  <li><span class="icon">{{ load_data(path="templates/shortcodes/github.html") | safe }}</span> <a href="https://github.com/joseph-x-li" target="_blank" rel="noopener noreferrer">github⇗</a></li>
+  <li><span class="icon">{{ load_data(path="templates/shortcodes/linkedin.html") | safe }}</span> <a href="https://linkedin.com/in/joseph-x-li" target="_blank" rel="noopener noreferrer">linkedin⇗</a></li>
+  <li><span class="icon">{{ load_data(path="templates/shortcodes/strava.html") | safe }}</span> <a href="https://www.strava.com/athletes/45137849" target="_blank" rel="noopener noreferrer">strava⇗</a></li>
+  <li><span class="icon">{{ load_data(path="templates/shortcodes/youtube.html") | safe }}</span> <a href="https://www.youtube.com/@josephli3561" target="_blank" rel="noopener noreferrer">youtube⇗</a></li>
 </ul>
 {% endblock content %}

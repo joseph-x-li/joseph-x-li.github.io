@@ -4,70 +4,32 @@
 <h1> {{ section.title }} </h1>
 
 {% if section.extra and section.extra.is_construction == "yes" %}
-<style>
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(100px); }
-  100% { transform: translateX(0); }
-}
-
-.marquee-image {
-  animation: marquee 3s steps(600) infinite;
-  border: 2px solid var(--border-color);
-}
-</style>
-<img src="/404.jpeg" class="marquee-image">
+<img src="/404.jpeg" class="marquee-image" alt="Under construction">
 {% else %}
-<style>
-.blog-post {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 20px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid var(--border-color);
-}
-
-@media (max-width: 700px) {
-  .blog-post {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .blog-post img {
-    margin: 0 auto;
-  }
-  .blog-post > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-</style>
-<ul style="list-style: none; padding: 0;">
+<ul class="post-list">
   {% for page in section.pages %}
-  <li class="blog-post">
+  <li class="post-card">
     {% if page.extra.featured_image %}
-    <div style="display: flex; align-items: center;">
+    <div class="post-card-media">
       {% set image = resize_image(path=page.extra.featured_image, width=350, height=250, op="fill") %}
-      <img src="{{ image.url }}" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
+      <img src="{{ image.url }}" alt="">
     </div>
     {% elif page.extra.book_cover %}
-    <div style="display: flex; align-items: center;">
+    <div class="post-card-media">
       {% set image = resize_image(path=page.extra.book_cover, width=200, height=300, op="fill") %}
-      <img src="{{ image.url }}" style="max-width: 100%; height: auto; border: 1px solid var(--border-color);">
+      <img src="{{ image.url }}" alt="">
     </div>
     {% endif %}
-    <div>
-      <div style="font-size: 1.5rem;">
+    <div class="post-card-body">
+      <div class="post-card-title">
         <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
       </div>
-      <div style="margin-top: 5px;">{{ page.date }}</div>
+      <div class="post-card-meta">{{ page.date }}</div>
       {% if page.reading_time %}
-      <div style="margin-top: 5px;">{% if page.reading_time > 1 %} {{ page.reading_time }} mins {% else %} {{ page.reading_time }} min {% endif %}</div>
+      <div class="post-card-meta">{% if page.reading_time > 1 %} {{ page.reading_time }} mins {% else %} {{ page.reading_time }} min {% endif %}</div>
       {% endif %}
       {% if page.description %}
-      <div style="margin-top: 10px;">{{ page.description }}</div>
+      <div class="post-card-desc">{{ page.description }}</div>
       {% endif %}
     </div>
   </li>
