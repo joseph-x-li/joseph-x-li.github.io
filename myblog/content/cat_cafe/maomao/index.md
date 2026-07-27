@@ -23,7 +23,7 @@ Maomao is a very carefree cat. She will let you pick her up and play with her (I
   {{ collage_image(path="/cat_cafe/maomao/maomao_1.jpeg") }}
   {{ collage_image(path="/cat_cafe/maomao/maomao_2.jpeg") }}
   {{ collage_image(path="/cat_cafe/maomao/maomao_3.jpeg") }}
-  {{ collage_image(path="/cat_cafe/maomao/maomao_4.jpeg") }}
+  {{ collage_image(path="/cat_cafe/maomao/maomao_4.png") }}
   {{ collage_image(path="/cat_cafe/maomao/maomao_5.jpeg") }}
   {{ collage_image(path="/cat_cafe/maomao/maomao_6.jpeg") }}
 </ul>
