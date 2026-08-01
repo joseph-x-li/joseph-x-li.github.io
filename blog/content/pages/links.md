@@ -2,19 +2,6 @@
 title = "links to stuff i like"
 date = 2025-05-14
 +++
-### frequented blogs
-
- - [Eric Zheng](https://www.ericzheng.org/)
- - [Eric Shen](https://substack.com/@emshn)
- - [Eric Zhang](https://www.ekzhang.com/)
- - [Max Slater](https://thenumb.at/)
- - [Tristan Hume](https://thume.ca/)
- - [James Somers](https://www.newyorker.com/contributors/james-somers): Coworker who writes for the New Yorker because he writes well.
- - [George Hotz](https://geohot.github.io/blog/)
-   - Resentment
- - [Lei Mao](https://leimao.github.io/)
- - [Daniel Lawrence Lu](https://daniel.lawrence.lu/)
- 
 ### articles that i read over and over
  - [Play soccer while you still can](https://saratogafalcon.org/8784/columns/play-soccer-while-you-still-can/) - Victor Liu
  - [California's biggest flex](https://moxie.org/2023/11/13/what-california-exports.html) - Moxie Marlinspike
