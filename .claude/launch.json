@@ -4,7 +4,7 @@
     {
       "name": "zola-serve",
       "runtimeExecutable": "zola",
-      "runtimeArgs": ["--root", "myblog", "serve"],
+      "runtimeArgs": ["--root", "blog", "serve"],
       "port": 1111
     }
   ]

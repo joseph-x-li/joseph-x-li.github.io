@@ -1,5 +1,5 @@
 # Ignore the public directory
-myblog/public/
+blog/public/
 
 # Common system files
 .DS_Store
