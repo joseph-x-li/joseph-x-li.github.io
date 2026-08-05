@@ -17,7 +17,7 @@ date = 2025-05-14
  - [不耻下问](https://baike.baidu.com/item/%E4%B8%8D%E8%80%BB%E4%B8%8B%E9%97%AE/936571)
  - [八九点钟的太阳](https://baike.baidu.com/item/%E5%85%AB%E4%B9%9D%E7%82%B9%E9%92%9F%E7%9A%84%E5%A4%AA%E9%98%B3/84492)
 
-### poems
+### poem
  - [If--](https://www.poetryfoundation.org/poems/46473/if---) by Rudyard Kipling
  - [One Art](https://www.poetryfoundation.org/poems/47536/one-art) by Elizabeth Bishop
 
