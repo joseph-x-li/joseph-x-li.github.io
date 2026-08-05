@@ -1,6 +1,8 @@
 +++
 title = "cool links"
 date = 2025-05-14
+template = "blog_page.html"
+aliases = ["/pages/links/"]
 +++
  - [Play soccer while you still can](https://saratogafalcon.org/8784/columns/play-soccer-while-you-still-can/)
  - [California's biggest flex](https://moxie.org/2023/11/13/what-california-exports.html)
