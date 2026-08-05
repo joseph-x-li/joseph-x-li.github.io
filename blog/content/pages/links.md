@@ -21,6 +21,6 @@ date = 2025-05-14
  - [If--](https://www.poetryfoundation.org/poems/46473/if---) by Rudyard Kipling
  - [One Art](https://www.poetryfoundation.org/poems/47536/one-art) by Elizabeth Bishop
 
-### extremely funny shit
+### funny
  - [SVG: The Good, the Bad and the Ugly](https://www.eisfunke.com/posts/2021/svg-the-good-the-bad-and-the-ugly.html) - Nicolas Lenz
  - [Fuck Everything, We're Doing Five Blades](https://theonion.com/fuck-everything-were-doing-five-blades-1819584036/) - The Onion
