@@ -24,5 +24,3 @@ date = 2025-05-14
 ### extremely funny shit
  - [SVG: The Good, the Bad and the Ugly](https://www.eisfunke.com/posts/2021/svg-the-good-the-bad-and-the-ugly.html) - Nicolas Lenz
  - [Fuck Everything, We're Doing Five Blades](https://theonion.com/fuck-everything-were-doing-five-blades-1819584036/) - The Onion
- - [Just fucking use HTML](https://justfuckingusehtml.com/) - Unknown
-   - Accurately describes this website
