@@ -7,3 +7,4 @@ date = 2026-08-01
 - [andykong.org](https://andykong.org/)
 - [ericzheng.org](https://www.ericzheng.org/)
 - [konwoo.kim](https://www.konwoo.kim/)
+- [joel.place](https://joel.place/)
