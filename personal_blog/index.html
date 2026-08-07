@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<h1> 💬 personal blog </h1>
+
+
+<ul class="post-list">
+  
+  <li class="post-card">
+    
+    <div class="post-card-media">
+      
+      <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;chip.78234840a3f1134f.jpg" width="350" height="250" alt="" loading="lazy">
+    </div>
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/personal_blog/tiny_tapeout/">tiny-tapeout: FP8 multiplier</a>
+      </div>
+      <div class="post-card-meta">2025-06-16</div>
+      
+      <div class="post-card-meta"> 1 min </div>
+      
+      
+    </div>
+  </li>
+  
+  <li class="post-card">
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/personal_blog/hugo_first/">2022 New Year and New Website</a>
+      </div>
+      <div class="post-card-meta">2021-12-31</div>
+      
+      <div class="post-card-meta"> 7 mins </div>
+      
+      
+    </div>
+  </li>
+  
+</ul>
+
+
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

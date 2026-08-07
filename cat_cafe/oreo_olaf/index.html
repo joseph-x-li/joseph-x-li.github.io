@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">Oreo and Olaf</h1>
+  <p class="page-meta">
+    2026-03-17<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/oreo_olaf/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/oreo_olaf/#gallery">gallery</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><strong>Location:</strong> Jersey City, NJ<br />
+<strong>Owner:</strong> Ta Jarusirawong and Ice Rungaroon<br />
+<strong>Breed:</strong> Oreo: American Shorthair; Olaf: American Shorthair<br />
+<strong>Sex:</strong> Oreo: Male; Olaf: Male</p>
+<p>Olaf was born on a Christmas (2022-12-25) in a shelter, never been on a street.</p>
+<p>Oreo likes to be picked up and hugged especially in bathrooms for some reason.</p>
+<h2 id="gallery">gallery</h2>
+<ul class="columns">
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;oreo_1.754635f35fce1e4f.jpg" width="700" height="1106" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;oreo_2.f27c00d52171fb06.jpg" width="700" height="824" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;oreo_3.f2bd8bc7458d5d42.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;oreo_4.a6f98bf5800cf69b.jpg" width="700" height="1243" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;olaf_1.88502d30de894b09.jpg" width="700" height="1008" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;olaf_2.d839f612f16f21d9.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;olaf_3.401343d0dec81e22.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;olaf_4.8a001860a1133a9d.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

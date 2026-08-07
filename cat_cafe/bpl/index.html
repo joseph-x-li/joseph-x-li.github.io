@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">Peanut, Butter, and Linda</h1>
+  <p class="page-meta">
+    2022-07-08<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/bpl/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/bpl/#gallery">gallery</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><strong>Location:</strong> Seoul, Korea<br />
+<strong>Owner:</strong> Katie Yoon and her family<br />
+<strong>Breed:</strong> Various<br />
+<strong>Sex:</strong> Peanut: Male; Butter: Male; Linda: Female</p>
+<p>Peanut is the one that wears an orange jacket.<br />
+Butter is the one that is nearly all white.<br />
+Linda is the brown one.</p>
+<p>All three are street cats that were taken in.</p>
+<h2 id="gallery">gallery</h2>
+<ul class="columns">
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_1.4894507196c5fce5.jpg" width="700" height="509" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_2.c3ec0f0be09f1fdb.jpg" width="700" height="393" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_3.c3d2de77f76c6dc6.jpg" width="700" height="393" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_4.5ffb0d3c26f3d655.jpg" width="700" height="522" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_5.510612d056d13c5b.jpg" width="700" height="524" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_6.ae2c6daf451ddd96.jpg" width="665" height="1182" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_7.22cd584c231d0867.jpg" width="700" height="524" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_8.1f51689afe13138d.jpg" width="700" height="524" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_9.8f957f82ddff0c15.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_a.126bf39e5d4bb786.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;bpl_b.26c16ac75b3901a4.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>
