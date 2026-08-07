@@ -12,12 +12,12 @@
     {% if page.extra.featured_image %}
     <div class="post-card-media">
       {% set image = resize_image(path=page.extra.featured_image, width=350, height=250, op="fill") %}
-      <img src="{{ image.url }}" alt="" loading="lazy">
+      <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" alt="" loading="lazy">
     </div>
     {% elif page.extra.book_cover %}
     <div class="post-card-media">
       {% set image = resize_image(path=page.extra.book_cover, width=200, height=300, op="fill") %}
-      <img src="{{ image.url }}" alt="" loading="lazy">
+      <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" alt="" loading="lazy">
     </div>
     {% endif %}
     <div class="post-card-body">
