@@ -10,3 +10,5 @@ blog/public/
 .vscode/
 *.swp
 *.swo 
+# Zola-generated resized images (rebuilt in CI)
+blog/static/processed_images/
