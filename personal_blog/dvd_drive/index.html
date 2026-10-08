@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">How Claude Fixed My DVD Drive</h1>
+  <p class="page-meta">
+    2026-10-04<br>
+    <small> 4 mins </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/personal_blog/dvd_drive/#the-takeaways">The takeaways</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <p><em>A troubleshooting session with Claude Code, lightly edited for the blog.</em></p>
+<hr />
+<p><strong>Me:</strong> hi</p>
+<p><strong>Claude:</strong> Hi! What can I help you with today?</p>
+<hr />
+<p><strong>Me:</strong> I currently have plugged into this MacBook an Asus N Drive DVD drive, but it's not opening the DVD player. When I first plugged it in, it asked me permission to connect the drive, and I hit Allow, but since then, it has not been working. Can you figure out what's wrong?</p>
+<p><em>Claude checked the USB device list, the optical drive status (<code>drutil</code>), the external disks (<code>diskutil</code>), and the I/O Registry.</em></p>
+<p><strong>Claude:</strong> I found the problem: <strong>Google Chrome has taken control of the drive, so macOS can't use it.</strong></p>
+<p>The Mac sees the drive fine (ASUS External Drive, USB ID 0b05:1a28), and it presents itself as a normal mass-storage device. But the system driver that would let macOS read discs never attached to it. Instead, Chrome has opened the drive directly:</p>
+<pre><code>ASUS External Drive
+  ├─ IOUSBHostInterface@0   (mass storage, no system driver attached)
+  └─ Google Chrome          (has the device open)
+</code></pre>
+<p>That's why <code>drutil</code> and Disk Utility don't see the drive at all. The permission prompt you clicked <strong>Allow</strong> on was most likely Chrome asking whether a website could connect to a USB device, not macOS asking. Once you allowed it, Chrome took the drive for that site and blocked macOS from using it.</p>
+<p><strong>To fix it:</strong></p>
+<ol>
+<li>In Chrome, go to <code>chrome://settings/content/usbDevices</code> and remove the ASUS drive from any site listed there.</li>
+<li>Quit Chrome completely with ⌘Q.</li>
+<li>Unplug the DVD drive and plug it back in.</li>
+<li>Insert a disc.</li>
+</ol>
+<hr />
+<p><strong>Me:</strong> Can I use Google Chrome to actually view the DVD and its movie contents</p>
+<p><strong>Claude:</strong> No, Chrome isn't a good way to watch a DVD movie, for two reasons:</p>
+<ul>
+<li><strong>The video format:</strong> DVD movies are stored as MPEG-2 video in <code>.VOB</code> files. Chrome can't play MPEG-2, so even if it could read the files you'd get no picture.</li>
+<li><strong>Copy protection:</strong> Most store-bought DVDs are encrypted with CSS, and Chrome has no way to decrypt them.</li>
+</ul>
+<p><strong>What to use instead:</strong></p>
+<ol>
+<li><strong>Apple's DVD Player app.</strong> It's built into macOS, hidden at <code>/System/Library/CoreServices/Applications/DVD Player.app</code>.</li>
+<li><strong>VLC</strong> (free, videolan.org). It plays almost any DVD and is the best backup option.</li>
+</ol>
+<p>One thing to watch for: the first time you play a disc, the drive may ask you to set a region code. The number of times you can change it is limited, so pick the region that matches your discs.</p>
+<hr />
+<p><strong>Me:</strong> Okay, I quit Chrome completely, but it's still broken.</p>
+<p><em>Claude confirmed Chrome had fully let go of the drive, then dug into the kernel logs. Along the way it discovered its earlier log searches had silently returned nothing, because in zsh, <code>log</code> is a built-in command (it reports who has logged in). It has to be called as <code>/usr/bin/log</code>. 🙃</em></p>
+<p><strong>Claude:</strong> Chrome wasn't the real problem. With Chrome closed I could read the system logs properly, and they show what's actually going wrong.</p>
+<p>macOS detects the drive and loads the correct DVD driver. But every time the driver tries to talk to the drive, the transfer fails with a <code>transaction error</code>. macOS resets the drive and tries again, five times within about 4 seconds, then gives up:</p>
+<pre><code>endpoint 0x81: status 0xe00002ed (transaction error): 0 bytes transferred
+USB device 0B051A28 - will be reset!
+... fConsecutiveResetCount &gt; MaxConsecutiveResets (5)
+IOUSBMassStorageDriver: stop
+</code></pre>
+<p>So this is a problem with the physical connection. The drive drops out the moment real data starts moving, which happens when the motor spins up and draws the most power. The usual causes, from most to least likely:</p>
+<ol>
+<li><strong>Not enough power.</strong> These ASUS drives need more power than a single USB port gives during spin-up. Connect the second USB plug or power input if there is one, or use a powered USB hub.</li>
+<li><strong>A bad cable or adapter.</strong> Try a different adapter or a USB-C port directly on the Mac.</li>
+<li><strong>The drive is stuck.</strong> Unplug everything for about 30 seconds, then plug it back in.</li>
+<li><strong>A failing drive.</strong> Test it on another computer.</li>
+</ol>
+<hr />
+<p><em>plugs CD reader into USB hub with external power</em><br />
+<strong>Me:</strong>  not enough power was the issue. THANKS CLAUDE</p>
+<p><strong>Claude:</strong> Glad it's working! Enjoy the movie 🎬</p>
+<hr />
+<h3 id="the-takeaways">The takeaways</h3>
+<ul>
+<li>Claude's pretty smart, yo</li>
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

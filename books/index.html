@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<h1> 📚 books </h1>
+
+
+<ul class="post-list">
+  
+  <li class="post-card">
+    
+    <div class="post-card-media">
+      
+      <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;cover.d53e44b6ed85fd7f.jpg" width="200" height="300" alt="" loading="lazy">
+    </div>
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/books/founders/">The Founders</a>
+      </div>
+      <div class="post-card-meta">2025-06-15</div>
+      
+      <div class="post-card-meta"> 1 min </div>
+      
+      
+      <div class="post-card-desc">The Paypal Malfia</div>
+      
+    </div>
+  </li>
+  
+  <li class="post-card">
+    
+    <div class="post-card-media">
+      
+      <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;cover.cf0de9d1c7a81b70.jpg" width="200" height="300" alt="" loading="lazy">
+    </div>
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/books/1984/">1984</a>
+      </div>
+      <div class="post-card-meta">2025-06-03</div>
+      
+      
+    </div>
+  </li>
+  
+  <li class="post-card">
+    
+    <div class="post-card-media">
+      
+      <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;cover.b1aef6dc37f885d6.jpg" width="200" height="300" alt="" loading="lazy">
+    </div>
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/books/fairprice/">The Price of Being Fair</a>
+      </div>
+      <div class="post-card-meta">2025-02-18</div>
+      
+      <div class="post-card-meta"> 7 mins </div>
+      
+      
+      <div class="post-card-desc">Singapore&#x27;s largest grocery chain</div>
+      
+    </div>
+  </li>
+  
+  <li class="post-card">
+    
+    <div class="post-card-media">
+      
+      <img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;cover.0d066156e1c5c52b.jpg" width="200" height="300" alt="" loading="lazy">
+    </div>
+    
+    <div class="post-card-body">
+      <div class="post-card-title">
+        <a href="https://joseph-x-li.github.io/books/communist_manifesto/">The Communist Manifesto</a>
+      </div>
+      <div class="post-card-meta">2022-01-29</div>
+      
+      <div class="post-card-meta"> 1 min </div>
+      
+      
+      <div class="post-card-desc">Marx and Engels</div>
+      
+    </div>
+  </li>
+  
+</ul>
+
+
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

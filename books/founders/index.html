@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">The Founders</h1>
+  <p class="page-meta">
+    2025-06-15<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/books/founders/#summary">Summary</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="summary">Summary</h2>
+<ul>
+<li>
+<p>Chapter 0: There are "constellations of talent" and PayPal was one of them. Other modern examples include Bell Labs and Fairchild Semiconductor.</p>
+</li>
+<li>
+<p>Chapter 1:</p>
+<ul>
+<li>Max Levchin's goes from Ukraine to UIUC to Palo Alto. He really liked computers when he lived in Ukraine, so when he attends to UIUC, he joins ACM. At ACM he meets Scott Banister and Luke Nosek.</li>
+<li>Levchin falls in love with the movie Seven Samurai and considers it his "sole source of 'managment training'". This is not important to the story but I'm adding it in case I ever re-read this and decide to watch it.</li>
+<li>Levchin wants to drop out to catch the internet wave in CA, but his family wants him to finish a PhD, so he stays. He tries a couple startups and one called NetMeridian sticks. To make money, he takes a gig with the US Army Corps of Engineers writing software for their air traffic control system.</li>
+<li>Levchin gets to go to Silicon Valley when Scott Banister (who had already moved to the Valley and found success) helps Levchin sell NetMeridian.</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

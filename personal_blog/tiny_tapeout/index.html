@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">tiny-tapeout: FP8 multiplier</h1>
+  <p class="page-meta">
+    2025-06-16<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/personal_blog/tiny_tapeout/#hi">Hi</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <p>In my fall 2022 semester at CMU, I took Anish Singhani's student-taught course (98-154) about open source hardware. The final project was to write a small RTL application to be taped out on Google's <a rel="external" href="https://github.com/google/skywater-pdk">SKY130 process node</a> via the <a rel="external" href="https://tinytapeout.com/">tiny-tapeout project</a>.</p>
+<p>I decided to implement multiplication of two 8-bit floating point numbers because I had just completed an internship at Nvidia where I tested  various 8-bit floating point training schemes for BERT, in service of the new Nvida Hopper chips being released later that year.</p>
+<p>My system-verilog project:
+https://github.com/joseph-x-li/tt02-fp8mul</p>
+<p>The actual tapeout files:
+https://github.com/asinghani/18224-s23-tapeout/tree/main/designs/d36_jxli_fpmul</p>
+<p>I took all 2022 semester</p>
+<h2 id="hi">Hi</h2>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>
