@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">Doudou (豆豆)</h1>
+  <p class="page-meta">
+    2022-01-01<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/doudou/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/doudou/#gallery">gallery</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><strong>Location:</strong> Ridgewood, New Jersey<br />
+<strong>Owner:</strong> Edward Li and his family<br />
+<strong>Breed:</strong> Maine Coon<br />
+<strong>Sex:</strong> Female</p>
+<p>Doudou (豆豆), which means bean in Chinese, is called this because when she was adopted, her name was Bean.</p>
+<h2 id="gallery">gallery</h2>
+<ul class="columns">
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_1.5fc8c4a14e500341.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_3.8e05568e1df30368.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_2.b2fc2b4ba4f157f5.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_4.ff480f7b1643fe4c.jpg" width="700" height="933" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_6.171f005a63d083bd.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;doudou_5.206f6dfda552ddc7.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+</ul>
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

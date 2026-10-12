@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">Taotao (淘淘)</h1>
+  <p class="page-meta">
+    2022-07-03<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/taotao/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/taotao/#gallery">gallery</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><strong>Location:</strong> Saratoga, CA<br />
+<strong>Owner:</strong> Joseph Li and his family<br />
+<strong>Breed:</strong> Domestic Short Hair Mix<br />
+<strong>Sex:</strong> Female</p>
+<p>Taotao was called Emma before we adopted her. The name we gave her means something like mischievous in Chinese. We called her this as she always seemed to be messing around.</p>
+<p>Taotao is Maomao's younger sister. She is very timid but loves to eat and often brazenly steals Maomao's food. Maomao doesn't seem to care. Her hair is much shorter than Maomao's. She likes to sit in the napkin box on the kitchen table and knows we don't like that, so we often catch her curled in the box when we get home (she then runs away).</p>
+<h2 id="gallery">gallery</h2>
+<ul class="columns">
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;taotao_1.d06e522d11053dbd.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;taotao_2.10b5373de6340e15.jpg" width="508" height="600" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;taotao_3.4a206cb36c6b765a.jpg" width="700" height="413" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;taotao_4.70ee269c12c5d739.png" width="662" height="862" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;taotao_5.9f0f9fc70c1e5acd.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+</ul> 
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

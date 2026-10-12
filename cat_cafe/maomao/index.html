@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">Maomao (毛毛)</h1>
+  <p class="page-meta">
+    2022-07-03<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+    <nav class="toc">
+      <ul>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/maomao/#about">about</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://joseph-x-li.github.io/cat_cafe/maomao/#gallery">gallery</a>
+            
+          </li>
+        
+      </ul>
+    </nav>
+    <hr>
+  
+  <h2 id="about">about</h2>
+<p><strong>Location:</strong> Saratoga, CA<br />
+<strong>Owner:</strong> Joseph Li and his family<br />
+<strong>Breed:</strong> Domestic Short Hair Mix<br />
+<strong>Sex:</strong> Female</p>
+<p>Maomao was called Furball before we adopted her. The name we gave her means "fur fur" in Chinese which translates to furry (adj).</p>
+<p>Maomao is a very carefree cat. She will let you pick her up and play with her (I abuse this a bit). Unlike Taotao, Maomao is brave enough to hunt the live mice/rats we give her. When I say give her, I mean lock in a shower with her. She has gotten stuck in a tree, tried to fish in my fish tank, and fell in our pool.</p>
+<h2 id="gallery">gallery</h2>
+<ul class="columns">
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_1.c0add315f25edb2a.jpg" width="700" height="479" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_2.1f2831fc20707cf6.jpg" width="600" height="600" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_3.6c10237cdad4e101.jpg" width="700" height="394" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_4.4ebd0e013b456ad9.png" width="700" height="582" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_5.adf9f1dd0785afe7.jpg" width="700" height="1242" alt="" loading="lazy"></li>
+
+  <li class="item"><img src="https:&#x2F;&#x2F;joseph-x-li.github.io&#x2F;processed_images&#x2F;maomao_6.14d67f17eccc506d.jpg" width="700" height="525" alt="" loading="lazy"></li>
+
+</ul>
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>

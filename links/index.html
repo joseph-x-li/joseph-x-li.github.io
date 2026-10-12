@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>joseph li's website</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle" aria-label="Toggle dark mode">🌘</button>
+  <div class="content-container">
+    <!-- Do not show back button on index page -->
+    
+    <a href="../" class="back-button" aria-label="Go back">⬅️</a>
+    
+    
+<article>
+  <h1 class="page-title">cool links</h1>
+  <p class="page-meta">
+    2025-05-14<br>
+    <small> 1 min </small>
+  </p>
+  <hr>
+  
+  <ul>
+<li><a rel="external" href="https://saratogafalcon.org/8784/columns/play-soccer-while-you-still-can/">Play soccer while you still can</a></li>
+<li><a rel="external" href="https://moxie.org/2023/11/13/what-california-exports.html">California's biggest flex</a></li>
+<li><a rel="external" href="https://paulgraham.com/words.html">Putting Ideas Into Words</a></li>
+<li><a rel="external" href="https://mathwithbaddrawings.com/2015/04/08/the-math-ceiling-wheres-your-cognitive-breaking-point/">The Math Ceiling: Where’s your cognitive breaking point?</a></li>
+<li><a rel="external" href="https://www.sixthtone.com/">Sixth Tone</a></li>
+<li><a rel="external" href="https://www.readingthechinadream.com/">Reading the China Dream</a></li>
+<li><a rel="external" href="https://baike.baidu.com/item/%E4%B8%8D%E8%80%BB%E4%B8%8B%E9%97%AE/936571">不耻下问</a></li>
+<li><a rel="external" href="https://baike.baidu.com/item/%E5%85%AB%E4%B9%9D%E7%82%B9%E9%92%9F%E7%9A%84%E5%A4%AA%E9%98%B3/84492">八九点钟的太阳</a></li>
+<li><a rel="external" href="https://www.poetryfoundation.org/poems/46473/if---">If--</a></li>
+<li><a rel="external" href="https://www.poetryfoundation.org/poems/47536/one-art">One Art</a></li>
+<li><a rel="external" href="https://www.eisfunke.com/posts/2021/svg-the-good-the-bad-and-the-ugly.html">SVG: The Good, the Bad and the Ugly</a></li>
+<li><a rel="external" href="https://theonion.com/fuck-everything-were-doing-five-blades-1819584036/">Fuck Everything, We're Doing Five Blades</a></li>
+</ul>
+
+</article>
+
+  </div>
+
+  <script>
+    const ThemeManager = {
+      emojis: {
+        light: '🌘',
+        dark: '🌕'
+      },
+
+      init() {
+        // The head script already set data-theme before first paint.
+        this.setTheme(document.documentElement.getAttribute('data-theme'), false);
+
+        // Follow system theme changes until the user picks a theme explicitly
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('theme')) {
+            this.setTheme(e.matches ? 'dark' : 'light', false);
+          }
+        });
+
+        document.querySelector('.theme-toggle').addEventListener('click', () => this.toggle());
+      },
+
+      setTheme(theme, persist) {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('.theme-toggle').textContent = this.emojis[theme];
+        if (persist) {
+          localStorage.setItem('theme', theme);
+        }
+      },
+
+      toggle() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        this.setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
+      }
+    };
+
+    ThemeManager.init();
+  </script>
+</body>
+
+</html>
