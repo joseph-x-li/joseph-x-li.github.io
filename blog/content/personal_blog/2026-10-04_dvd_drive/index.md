@@ -1,5 +1,6 @@
 +++
 title = "How Claude Fixed My DVD Drive"
+draft = true
 +++
 
 *A troubleshooting session with Claude Code, lightly edited for the blog.*

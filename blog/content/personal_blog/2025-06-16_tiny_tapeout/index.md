@@ -1,5 +1,6 @@
 +++
 title = "tiny-tapeout: FP8 multiplier"
+draft = true
 extra = {"featured_image" = "/personal_blog/tiny_tapeout/chip.jpeg"}
 +++
 
